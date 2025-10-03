@@ -1,0 +1,31 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Initialize string  │
+│ result = ""        │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────────────────┐
+│ For i = 0 to s1.Length - 1     │
+│  If s1[i] == s2[i]:            │
+│      Append '0' to result      │
+│  Else:                         │
+│      Append '1' to result      │
+└──────┬─────────────────────────┘
+       │
+┌──────┴───────────┐
+│ Return result    │
+└──────┬───────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+1. We iterate through both strings index by index.
+2. For each position:
+    * If s1[i] == s2[i], XOR is 0.
+    * Otherwise, XOR is 1.
+3. Append the XOR result to the result string.
+4. Return the final XOR string.

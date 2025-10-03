@@ -1,0 +1,34 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Is position == 0 ?        │
+└───────┬─────────────────┬─┘
+       Yes                No
+        │                 │
+┌───────┴───────────┐     │
+│ Return llist.next │     │
+└───────┬───────────┘     │
+        │                 │
+┌───────┴─────────────┐   │
+│ Set current = llist │   │
+│ index = 0           │   │
+└───────┬─────────────┘   │
+        │                 │
+┌───────┴─────────────────┴─────┐
+│ While index < position-1      │
+│   Move current = current.next │
+│   index++                     │
+└───────┬───────────────────────┘
+        │
+┌───────┴─────────────────────────────────────┐
+│ If current != null and current.next != null │
+│   current.next = current.next.next          │
+└───────┬─────────────────────────────────────┘
+        │
+┌───────┴──────────┐
+│ Return llist     │
+└──────────────────┘
+
+The deleteNode function removes a node from a singly linked list at a specified position. If the node to delete is the head (position = 0), the function simply returns the second node as the new head. Otherwise, it traverses the list to reach the node immediately before the target node. It then skips the target node by updating the next pointer of the previous node to point to the node after the one being deleted. Finally, the function returns the original head of the list, ensuring that the list remains properly linked after deletion.

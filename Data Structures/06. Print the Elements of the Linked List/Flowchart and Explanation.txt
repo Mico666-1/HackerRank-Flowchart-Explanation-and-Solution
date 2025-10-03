@@ -1,0 +1,31 @@
+┌──────────────────────────┐
+│          Start           │
+└─────────────┬────────────┘
+              │
+┌─────────────┴────────────┐
+│ Set current = head       │
+└─────────────┬────────────┘
+              │
+┌─────────────┴────────────┐
+│ Is current != null ?     │
+└───────┬─────────┬────────┘
+       Yes        No
+        │         │
+┌───────┴───────┐ │
+│ Print         │ │
+│ current.data  │ │
+└───────┬───────┘ │
+        │         │
+┌───────┴──────┐  │
+│ Move to      │  │
+│ next node    │  │
+│ current =    │  │
+│ current.next │  │
+└───────┬──────┘  │
+        │         │
+        └─────┬───┘
+┌─────────────┴────────────┐
+│           End            │
+└──────────────────────────┘
+
+The printLinkedList function traverses the linked list starting from the head. For each node, it prints the data value and moves to the next node by following the next pointer. The process continues until the end of the list is reached (when the current node is null). This ensures that all node values are printed in order, one per line, as required.

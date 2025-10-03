@@ -1,0 +1,20 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Read integers n, m │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ If m == 1 OR n % 2 == 0            │
+│     Return 2 (Second player wins)  │
+│ Else                               │
+│     Return 1 (First player wins)   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+In Tower Breakers, players take turns reducing the height of towers. If all towers have height 1, the first player cannot move and loses. If the number of towers n is even, the second player can mirror the first player’s moves to maintain symmetry and win. Otherwise, the first player can control the game and force a win.

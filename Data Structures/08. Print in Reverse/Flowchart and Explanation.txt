@@ -1,0 +1,26 @@
+┌──────────────────────────┐
+│          Start           │
+└─────────────┬────────────┘
+              │
+┌─────────────┴────────────┐
+│ Is llist == null ?       │
+└───────┬─────────┬────────┘
+       Yes        No
+        │         │
+┌───────┴───────┐ │
+│ Return (end)  │ │
+└───────────────┘ │
+                  │
+┌─────────────────┴─────────────┐
+│ Call reversePrint(llist.next) │
+└─────────────┬─────────────────┘
+              │
+┌─────────────┴────────────┐
+│ Print llist.data         │
+└─────────────┬────────────┘
+              │
+┌─────────────┴────────────┐
+│           End            │
+└──────────────────────────┘
+
+The reversePrint function prints all nodes of a singly linked list in reverse order using recursion. It first recursively traverses to the end of the list. Once the recursion reaches the last node, it prints the node’s data while unwinding, effectively printing from tail to head. This approach avoids altering the original linked list and works seamlessly with the provided Main.

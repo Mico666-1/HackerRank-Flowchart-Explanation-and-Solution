@@ -1,0 +1,20 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Read integer n     │
+└──────┬─────────────┘
+       │
+┌──────┴───────────────────────┐
+│ If n % 4 == 0                │
+│     Return "Second"          │
+│ Else                         │
+│     Return "First"           │
+└──────┬───────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+In the Game of Stones, a player can remove 1, 2, or 3 stones per turn. Using combinatorial game theory, the losing positions are multiples of 4. If n % 4 == 0, the first player cannot force a win and loses if the second player plays optimally. Otherwise, the first player can always win by reducing the pile to a multiple of 4 on the next turn.

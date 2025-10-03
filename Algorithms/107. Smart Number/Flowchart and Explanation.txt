@@ -1,0 +1,37 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Read test_cases    │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ For i = 0 to       │
+│ test_cases - 1     │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ Read num           │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ val = sqrt(num)    │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ If val * val == num│
+│    Print "YES"     │
+│ Else               │
+│    Print "NO"      │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ End For Loop       │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+This program reads a number of test cases and, for each input number, determines whether it is a “smart number,” defined as a perfect square. The is_smart_number function calculates the integer square root of the number and checks if squaring that root returns the original number. If it does, the program prints “YES”; otherwise, it prints “NO.” This process repeats for all test cases, ensuring each input is individually evaluated.

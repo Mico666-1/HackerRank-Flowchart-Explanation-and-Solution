@@ -1,0 +1,38 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Read number of test│
+│ cases              │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each test case:                │
+│  Build linked list 1               │
+│  Build linked list 2               │
+│  Connect list2 tail to merge node  │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────────────────────┐
+│ Initialize ptr1 = head1      │
+│ Initialize ptr2 = head2      │
+└──────┬───────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ While ptr1 != ptr2:                │
+│  If ptr1 is null → ptr1 = head2    │
+│  Else → ptr1 = ptr1.next           │
+│  If ptr2 is null → ptr2 = head1    │
+│  Else → ptr2 = ptr2.next           │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return ptr1.data   │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The program finds the merge point of two singly linked lists. It uses a two-pointer approach, where each pointer traverses one list. When a pointer reaches the end of its list, it starts at the head of the other list. Eventually, the pointers meet at the merge node, because both pointers traverse the same total distance. The value of the merge node is returned. This approach is efficient because it runs in O(n + m) time and uses O(1) extra space.

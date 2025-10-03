@@ -1,0 +1,56 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Initialize 2D list arr      │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Loop i = 0 to 5             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read row i and convert to   │
+│ list of integers            │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴────────────────┐
+│ Call Result.hourglassSum(arr)│
+└─────────────┬────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Initialize maxSum = -∞      │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Loop i = 0 to 3 (rows)      │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Loop j = 0 to 3 (columns)   │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Calculate hourglass sum at  │
+│ position (i,j)              │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ If sum > maxSum             │
+│   maxSum = sum              │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Return maxSum               │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Write result to output      │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│            End              │
+└─────────────────────────────┘
+
+The program reads a 6×6 2D array from input, then calls hourglassSum to find the maximum sum of all hourglass patterns. Inside hourglassSum, it loops over all valid top-left positions of hourglasses, calculates the sum for each, and keeps track of the maximum sum. Finally, the program outputs this maximum sum. The approach efficiently checks all hourglasses in the fixed-size array while maintaining simplicity and readability.

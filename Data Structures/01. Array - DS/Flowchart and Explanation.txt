@@ -1,0 +1,33 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read arrCount (number of    │
+│ elements)                   │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read array elements and     │
+│ convert to List<int> arr    │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴────────────────┐
+│ Call Result.reverseArray(arr)│
+└─────────────┬────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Inside reverseArray:        │
+│ Reverse list a and return it│
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Write reversed array to     │
+│ output                      │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│            End              │
+└─────────────────────────────┘
+
+The program reads an integer arrCount to determine the number of elements, then reads a line of space-separated integers and stores them in a List<int> called arr. It calls the reverseArray function, which reverses the list in place using a.Reverse() and returns it. Finally, the program prints the reversed array as a space-separated string and ends. This approach efficiently reverses the input while keeping the code simple and readable.

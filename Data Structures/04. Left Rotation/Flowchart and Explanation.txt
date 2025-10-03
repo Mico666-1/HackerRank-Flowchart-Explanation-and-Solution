@@ -1,0 +1,43 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read n and d                │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read array arr              │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Compute d = d % n           │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴────────────────┐
+│ Initialize empty list rotated│
+└─────────────┬────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ For i = d to n-1:           │
+│ Append arr[i] to rotated    │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ For i = 0 to d-1:           │
+│ Append arr[i] to rotated    │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Return rotated list         │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Write rotated list to output│
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│            End              │
+└─────────────────────────────┘
+
+The program reads n and d along with an integer array arr. The rotateLeft function rotates the array to the left by d positions by first appending elements from index d to the end, then appending the first d elements. The resulting rotated list is returned and printed. This approach efficiently handles rotation in linear time while keeping the code simple.

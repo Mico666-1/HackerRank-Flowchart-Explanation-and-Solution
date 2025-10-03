@@ -1,0 +1,38 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Read integer list s│
+└──────┬─────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Initialize nimSum = 0              │
+│ Initialize countGreaterThanOne = 0 │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ For each pile in s:                  │
+│   nimSum ^= pile                     │
+│   If pile > 1: countGreaterThanOne++ │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ If countGreaterThanOne == 0          │
+│   If s.Count % 2 == 0: return "First"│
+│   Else: return "Second"              │
+│ Else                                 │
+│   If nimSum == 0: return "Second"    │
+│   Else: return "First"               │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+In Misère Nim, the normal Nim rules apply except when all piles have height 1.
+
+* All piles are 1: The player who faces an odd number of piles loses, because any move will leave the opponent with an even number of 1s, allowing them to force a win.
+* Otherwise: Use standard Nim strategy: compute the XOR (nim-sum) of all pile sizes. If nim-sum is zero, the current player loses; otherwise, they can force a win.
+
+This guarantees the optimal play for both players.

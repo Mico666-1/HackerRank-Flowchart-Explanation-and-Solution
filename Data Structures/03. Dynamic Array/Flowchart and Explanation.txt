@@ -1,0 +1,55 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read n and q                │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Read q queries into 2D list │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Initialize n sequences as   │
+│ empty lists                 │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ lastAnswer = 0              │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ For each query:             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Compute idx = (x XOR lastA) │
+│ % n                         │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ If type == 1:               │
+│   Append y to seqList[idx]  │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴────────────────┐
+│ If type == 2:                │
+│   lastAnswer = seqList[idx][ │
+│   y % seqList[idx].Count]    │
+│   Add lastAnswer to output   │
+└─────────────┬────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Return all lastAnswer values│
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Write output to file        │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│            End              │
+└─────────────────────────────┘
+
+The program initializes n empty sequences and processes q queries on them. For type 1 queries, it appends a value to a sequence determined by (x XOR lastAnswer) % n. For type 2 queries, it retrieves an element from the sequence, updates lastAnswer, and stores it in the output list. Finally, all lastAnswer values are printed. This efficiently simulates the dynamic array operations as described.

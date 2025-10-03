@@ -1,0 +1,21 @@
+┌──────────────────────────┐
+│          Start           │
+└─────────────┬────────────┘
+              │
+┌─────────────┴────────────┐
+│ Create newNode with data │
+└─────────────┬────────────┘
+              │
+┌─────────────┴────────────┐
+│ Set newNode.next = llist │
+└─────────────┬────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Return newNode as new head│
+└─────────────┬─────────────┘
+              │
+┌─────────────┴────────────┐
+│           End            │
+└──────────────────────────┘
+
+The insertNodeAtHead function adds a new node at the beginning of a singly linked list. A new node is created with the given data. Its next pointer is set to the current head of the list (llist). The new node is then returned and becomes the new head. This allows the linked list to grow by adding each new element at the front while preserving the previous nodes.

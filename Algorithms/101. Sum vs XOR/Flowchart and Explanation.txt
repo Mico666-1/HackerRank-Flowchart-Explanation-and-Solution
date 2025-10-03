@@ -1,0 +1,31 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read long integer n                │
+│ If n == 0                          │
+│    Return 1                        │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Initialize count = 0               │
+│ temp = n                           │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ While temp > 0                     │
+│   If least significant bit of temp │
+│       is 0 then count++            │
+│   Right shift temp by 1            │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return 2^count     │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The problem asks for the number of integers x such that n + x = n ^ x. This holds when x has 1s only where n has 0s in binary. Each 0-bit in n gives two choices for x (0 or 1), so the total count is 2^(number of 0-bits in n). Special case: n = 0 returns 1.

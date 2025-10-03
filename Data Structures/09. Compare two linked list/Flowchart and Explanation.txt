@@ -1,0 +1,36 @@
+┌───────────────────────────────┐
+│           Start               │
+└─────────────┬─────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Set current1 = head1        │
+│ Set current2 = head2        │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴──────────────────────────────┐
+│ While current1 != null && current2 != null │
+└─────────────┬──────────────────────────────┘
+              │
+┌─────────────┴─────────────────────┐
+│ If current1.data != current2.data │
+└───────┬──────┬────────────────────┘
+       Yes     No
+        │      │
+┌───────┴─────┐│
+│ Return false││
+└─────────────┘│
+               │
+┌──────────────┴────────────────┐
+│ Move current1 = current1.next │
+│ Move current2 = current2.next │
+└──────────────┬────────────────┘
+               │
+┌──────────────┴────────────────┐
+│ End While                     │
+└─────────────┬─────────────────┘
+              │
+┌─────────────┴───────────────────────────────┐
+│ Return current1 == null && current2 == null │
+└─────────────────────────────────────────────┘
+
+The function traverses both linked lists simultaneously using two pointers. At each step, it compares the data of corresponding nodes. If any pair differs, it immediately returns false. After the traversal, it checks if both lists have ended; if they have, the lists are identical and it returns true. This approach ensures that both node values and lengths are compared efficiently.

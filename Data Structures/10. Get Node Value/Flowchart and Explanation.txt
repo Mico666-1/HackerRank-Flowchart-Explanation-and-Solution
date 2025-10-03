@@ -1,0 +1,44 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴──────────────┐
+│ Read number of test │
+│ cases (tests)       │
+└──────┬──────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ For each test case:                  │
+│  Initialize empty linked list        │
+│  Read number of nodes (llistCount)   │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ For i = 0 to llistCount - 1:         │
+│   Read node value                    │
+│   Insert node into linked list       │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ Read positionFromTail                │
+│ Call getNode(head, positionFromTail) │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴────────────────────┐
+│ Inside getNode function:  │
+│  Calculate length of list │
+│  positionFromHead = length│
+│  - 1 - positionFromTail   │
+│  Traverse to that node    │
+│  Return node.data         │
+└──────┬────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Print result       │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The program reads multiple test cases and constructs a singly linked list for each case. The getNode function retrieves the value at a node that is a specified number of positions from the tail. It first calculates the total length of the list, then computes the corresponding position from the head (length - 1 - positionFromTail). It then traverses the list to this position and returns the node's data. This approach ensures correct retrieval regardless of the list's length.
