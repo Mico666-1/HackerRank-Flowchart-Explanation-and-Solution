@@ -1,0 +1,25 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input string s                │
+│ Initialize operations = 0          │
+│ left = 0, right = s.Length - 1     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ While left < right                 │
+│  operations += |s[left] - s[right]|│
+│  left++, right--                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return operations  │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function calculates the minimum number of operations to convert a string into a palindrome by only reducing letters. It compares characters from both ends of the string, adding the absolute difference to the operations counter. Iterating inward ensures every pair of characters is checked, producing the minimal total operations efficiently.

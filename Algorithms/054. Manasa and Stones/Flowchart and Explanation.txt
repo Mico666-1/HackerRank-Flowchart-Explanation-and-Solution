@@ -1,0 +1,33 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Initialize empty SortedSet results │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────────┐
+│ For i = 0 to n-1 │
+└──────┬───────────┘
+       │
+┌──────┴──────────────────────────────┐
+│ Compute lastStone = a*(n-1-i) + b*i │
+└──────┬──────────────────────────────┘
+       │
+┌──────┴───────────────────┐
+│ Add lastStone to results │
+└──────┬───────────────────┘
+       │
+┌──────┴──────┐
+│ End For i   │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────┐
+│ Convert results to List<int> │
+└──────┬───────────────────────┘
+       │
+┌──────┴────────┐
+│ Return result │
+└───────────────┘
+
+The stones function calculates all possible values of the last stone by iterating through the number of steps. For each step, it computes the value using a*(n-1-i) + b*i and stores it in a SortedSet to automatically remove duplicates and maintain ascending order. Finally, the set is converted to a list and returned, giving all unique possible last stone values in order.

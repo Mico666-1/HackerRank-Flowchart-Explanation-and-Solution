@@ -1,0 +1,26 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read integers l and r              │
+│ Initialize maxXor = 0              │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = l to r                     │
+│   For j = i to r                   │
+│     currentXor = i XOR j           │
+│     If currentXor > maxXor         │
+│         maxXor = currentXor        │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return maxXor      │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function finds the maximum XOR value for all pairs (i, j) where l ≤ i ≤ j ≤ r. It uses nested loops to compute i ^ j for each pair and tracks the largest XOR encountered. This brute-force method guarantees correctness for small ranges of l and r.

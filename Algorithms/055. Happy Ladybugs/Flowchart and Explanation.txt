@@ -1,0 +1,25 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────┐
+│ Initialize counts dictionary │
+└──────┬───────────────────────┘
+       │
+┌──────┴───────────────────────────────────────┐
+│ Count occurrences of each color (ignore '_') │
+└──────┬───────────────────────────────────────┘
+       │
+┌──────┴──────────────────────────────┐
+│ Check if any color occurs only once │
+└──────┬──────────────────────────────┘
+       │
+┌──────┴────────────────────────────────────────────────────┐
+│ If no empty cells, check if all adjacent duplicates exist │
+└──────┬────────────────────────────────────────────────────┘
+       │
+┌──────┴───────────────────────────┐
+│ Return "YES" if happy, else "NO" │
+└──────────────────────────────────┘
+
+The happyLadybugs function determines if it is possible to arrange the ladybugs such that every ladybug is happy. It first counts the occurrences of each color to ensure no single-colored ladybug exists alone. If there are no empty cells ('_'), it checks if all ladybugs are already adjacent to at least one of the same color. If these conditions are met, it returns "YES"; otherwise, "NO". This ensures that all ladybugs can either stay in place or be rearranged to achieve happiness.

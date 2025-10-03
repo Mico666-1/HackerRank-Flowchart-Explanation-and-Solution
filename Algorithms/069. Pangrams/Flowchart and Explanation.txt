@@ -1,0 +1,28 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────────┐
+│ Read input string s              │
+│ Convert s to lowercase           │
+│ Initialize empty HashSet letters │
+└──────┬───────────────────────────┘
+       │
+┌──────┴─────────────────────────┐
+│ For each char c in s           │
+│  If c >= 'a' and c <= 'z'      │
+│      Add c to letters          │
+└──────┬─────────────────────────┘
+       │
+┌──────┴─────────────────────────┐
+│ If letters.Count == 26         │
+│     Return "pangram"           │
+│ Else                           │
+│     Return "not pangram"       │
+└──────┬─────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The program checks if a string contains every letter of the English alphabet at least once. It converts the string to lowercase and adds all alphabetic characters to a HashSet to ensure uniqueness. If the HashSet has 26 letters, the string is a pangram; otherwise, it is not. This efficiently determines pangram status in a single pass.

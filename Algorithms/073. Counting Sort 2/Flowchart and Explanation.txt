@@ -1,0 +1,26 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────────────┐
+│ Read integer n and list arr                │
+│ maxValue = maximum element in arr          │
+│ Initialize freq array of size maxValue + 1 │
+└──────┬─────────────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each num in arr                │
+│  freq[num]++                       │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Convert freq array │
+│ to List<int> and   │
+│ return             │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+This version of counting sort calculates the frequency of each integer in the input array. It first finds the maximum element to size the frequency array, then counts occurrences of each number. Finally, it converts the frequency array to a List<int> and returns it. This approach efficiently provides the count of each number without sorting the full array.

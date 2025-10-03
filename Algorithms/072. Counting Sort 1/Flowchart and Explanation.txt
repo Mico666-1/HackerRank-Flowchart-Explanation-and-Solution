@@ -1,0 +1,32 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────────┐
+│ Read integer n and list arr      │
+│ maxValue = maximum element in arr│
+│ Initialize count array of size   │
+│ maxValue + 1                     │
+└──────┬───────────────────────────┘
+       │
+┌──────┴───────────────────────────┐
+│ For each num in arr              │
+│  count[num]++                    │
+└──────┬───────────────────────────┘
+       │
+┌──────┴───────────────────────────┐
+│ Initialize empty sortedList      │
+│ For i = 0 to maxValue            │
+│  For j = 0 to count[i]-1         │
+│      Add i to sortedList         │
+└──────┬───────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return sortedList  │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function implements counting sort, which counts the occurrences of each integer in the input array. It then rebuilds a sorted list by adding each number the number of times it appears. This approach is efficient for integers with a limited range and guarantees a stable, non-comparison-based sort.

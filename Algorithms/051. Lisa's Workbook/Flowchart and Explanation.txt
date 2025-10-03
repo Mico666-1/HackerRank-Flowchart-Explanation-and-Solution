@@ -1,0 +1,53 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────────────┐
+│ specialProblems = 0 │
+└──────┬──────────────┘
+       │
+┌──────┴─────────┐
+│ pageNumber = 1 │
+└──────┬─────────┘
+       │
+┌──────┴─────────────┐
+│ For each chapter i │
+└──────┬─────────────┘
+       │
+┌──────┴────────────┐
+│ problems = arr[i] │
+└──────┬────────────┘
+       │
+┌──────┴────────────────┐
+│ For j = 1 to problems │
+└──────┬────────────────┘
+       │
+┌──────┴─────────────┐
+│ If j == pageNumber │
+└──────┬─────────────┘
+       │
+┌──────┴────────────┐
+│ specialProblems++ │
+└──────┬────────────┘
+       │
+┌──────┴─────────────────────────┐
+│ If j % k == 0 OR j == problems │
+└──────┬─────────────────────────┘
+       │
+┌──────┴───────┐
+│ pageNumber++ │
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ End For j   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ End For i   │
+└──────┬──────┘
+       │
+┌──────┴─────────────────┐
+│ return specialProblems │
+└────────────────────────┘
+
+The workbook function counts the number of special problems in a workbook. Each chapter may span multiple pages depending on the number of problems and the maximum problems per page (k). A problem is special if its index matches the page number. The function iterates through each chapter and problem, incrementing the page number after every k problems or at the chapter’s end, while counting the special problems.

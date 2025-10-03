@@ -1,0 +1,27 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input array w                 │
+│ Sort w in ascending order          │
+│ containers = 0                     │
+│ limit = -1                         │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each weight in w               │
+│  If weight > limit                 │
+│      containers++                  │
+│      limit = weight + 4            │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return containers  │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function minimizes the number of containers needed for toys by first sorting their weights. Each container can hold toys whose weights are within 4 units of the first toy it contains. By iterating through the sorted weights, it counts a new container only when the current toy exceeds the weight limit of the previous container. This greedy approach ensures the minimum number of containers efficiently.

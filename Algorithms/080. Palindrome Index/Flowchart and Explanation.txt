@@ -1,0 +1,29 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input string s                │
+│ left = 0, right = s.Length - 1     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ While left < right                 │
+│  If s[left] != s[right]            │
+│      If IsPalindrome(left+1, right)│
+│          Return left               │
+│      Else                          │
+│          Return right              │
+│  left++, right--                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return -1 (already │
+│ palindrome)        │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function finds the index of a character that can be removed to make a string a palindrome. It compares characters from both ends and, upon mismatch, checks if skipping either the left or right character produces a palindrome. If the string is already a palindrome, it returns -1. This ensures an efficient single-pass solution with O(n) complexity.

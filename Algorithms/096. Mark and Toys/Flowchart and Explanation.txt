@@ -1,0 +1,27 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read prices array and budget k     │
+│ Sort prices in ascending order     │
+│ count = 0, total = 0               │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each price in prices           │
+│  If total + price > k              │
+│      Break                         │
+│  total += price                    │
+│  count++                           │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return count       │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function calculates the maximum number of toys that can be bought with a budget k. It sorts the toy prices in ascending order and keeps adding toys to the total until adding another toy would exceed the budget. The count of successfully added toys is returned, ensuring the maximum number of toys is purchased efficiently using a greedy approach.

@@ -1,0 +1,26 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input array arr               │
+│ Sort arr in ascending order        │
+│ minDiff = infinity                 │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 0 to arr.Count - 2         │
+│  diff = |arr[i+1] - arr[i]|        │
+│  If diff < minDiff                 │
+│      minDiff = diff                │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return minDiff     │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function finds the minimum absolute difference between any two elements in an array. By first sorting the array, the smallest difference will always be between adjacent elements. Iterating through the sorted array and comparing adjacent elements ensures the minimum difference is found efficiently in O(n log n) time due to sorting.

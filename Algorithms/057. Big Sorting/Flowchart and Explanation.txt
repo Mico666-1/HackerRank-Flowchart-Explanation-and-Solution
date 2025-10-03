@@ -1,0 +1,19 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────┐
+│ Read input n and unsorted list │
+└──────┬─────────────────────────┘
+       │
+┌──────┴─────────────────────────┐
+│ Sort list by:                  │
+│  1. Length ascending           │
+│  2. Lexicographically          │
+└──────┬─────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return sorted list │
+└────────────────────┘
+
+The bigSorting function sorts a list of numeric strings by two criteria: length first and then lexicographically for equal lengths. Sorting by length ensures that shorter numbers appear before longer numbers (like 2 before 13), while lexicographic sorting resolves ties without converting strings to numeric types, which avoids issues with very large numbers. This efficiently handles extremely large numbers represented as strings.

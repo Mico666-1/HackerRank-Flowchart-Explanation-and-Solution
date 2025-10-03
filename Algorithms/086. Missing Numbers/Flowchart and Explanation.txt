@@ -1,0 +1,36 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input arrays arr and brr      │
+│ Initialize freqArr[10001] = 0      │
+│ Initialize freqBrr[10001] = 0      │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each num in arr                │
+│  freqArr[num]++                    │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each num in brr                │
+│  freqBrr[num]++                    │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ missing = empty list               │
+│ For i = 0 to 10000                 │
+│  If freqBrr[i] > freqArr[i]        │
+│      missing.Add(i)                │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return missing     │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function identifies numbers missing or occurring less frequently in arr compared to brr. It counts the frequency of each number in both arrays using a fixed-size frequency array and then checks which numbers in brr have higher counts than in arr. These numbers are added to the missing list, ensuring an efficient solution in O(n) time.

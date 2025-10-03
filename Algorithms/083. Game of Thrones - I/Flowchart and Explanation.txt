@@ -1,0 +1,33 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input string s                │
+│ Initialize freq[26] = 0            │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in s               │
+│  freq[c - 'a']++                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ oddCount = 0                       │
+│ For each count in freq             │
+│  If count % 2 != 0                 │
+│      oddCount++                    │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ If oddCount <= 1                   │
+│  Return "YES"                      │
+│ Else                               │
+│  Return "NO"                       │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function checks if the characters of a string can be rearranged to form a palindrome. It counts the frequency of each character and ensures that at most one character has an odd frequency. If this condition holds, a palindrome permutation is possible, otherwise it’s not. This solution efficiently runs in O(n) time.

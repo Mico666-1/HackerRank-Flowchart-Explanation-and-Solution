@@ -1,0 +1,37 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────┐
+│ loafsGiven = 0 │
+└──────┬─────────┘
+       │
+┌──────┴─────────────────┐
+│ For i = 0 to B.Count-2 │
+└──────┬─────────────────┘
+       │
+┌──────┴───────────┐
+│ If B[i] % 2 != 0 │
+└──────┬───────────┘
+       │
+┌──────┴────────────────────────────┐
+│ B[i]++, B[i+1]++, loafsGiven += 2 │
+└──────┬────────────────────────────┘
+       │
+┌──────┴──────┐
+│ End For i   │
+└──────┬──────┘
+       │
+┌──────┴──────────────┐
+│ If B[last] % 2 != 0 │
+└──────┬──────────────┘
+       │
+┌──────┴──────┐
+│ return "NO" │
+└──────┬──────┘
+       │
+┌──────┴────────────┐
+│ return loafsGiven │
+└───────────────────┘
+
+The fairRations function ensures all numbers in the array are even by giving 1 loaf to a person and the next person whenever an odd number is encountered. It tracks the total loaves given. If the last number remains odd after processing, it is impossible to balance, and the function returns "NO"; otherwise, it returns the total loaves distributed.

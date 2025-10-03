@@ -1,0 +1,17 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ Read V, n, and arr │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Search arr for V and get its index │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────┐
+│ Return index │
+└──────────────┘
+
+The introTutorial function searches for the integer V in the list arr and returns its index. Using List.IndexOf allows direct lookup in O(n) time since the array may not be sorted. This efficiently finds the first occurrence of V and provides the correct index for the tutorial challenge.

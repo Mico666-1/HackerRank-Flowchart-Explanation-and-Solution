@@ -1,0 +1,31 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input grid                    │
+│ n = number of rows                 │
+│ m = number of columns              │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each row i from 0 to n-1       │
+│  Sort row[i] in ascending order     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────────┐
+│ For each column col from 0 to m-1      │
+│  For row = 0 to n-2                    │
+│   If grid[row][col] > grid[row+1][col] │
+│       Return "NO"                      │
+└──────┬─────────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return "YES"       │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function first sorts each row of the grid alphabetically. Then it checks each column to ensure characters are non-decreasing from top to bottom. If all columns satisfy this condition, it returns "YES"; otherwise, "NO". This method ensures O(n * m log m) efficiency due to sorting rows.

@@ -1,0 +1,47 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴───────────────┐
+│ Initialize flags:    │
+│ hasDigit, hasLower,  │
+│ hasUpper, hasSpecial │
+└──────┬───────────────┘
+       │
+┌──────┴──────────────────────┐
+│ For each char in password   │
+│    Check type and set flags │
+└──────┬──────────────────────┘
+       │
+┌──────┴────────────────────────────┐
+│ Count missing types:              │
+│ missingTypes = sum of false flags │
+└──────┬────────────────────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ minLengthRequirement = max(0, 6 - n) │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴─────────────────────────────────────────┐
+│ Return max(missingTypes, minLengthRequirement) │
+└──────┬─────────────────────────────────────────┘
+       │
+┌──────┴───────┐
+│    End       │
+└──────────────┘
+
+The password must satisfy four character types and a minimum length of 6:
+
+1. Digit
+2. Lowercase letter
+3. Uppercase letter
+4. Special character (!@#$%^&*()-+)
+
+Steps:
+
+1. Iterate over the password and track which types exist.
+2. Count how many types are missing.
+3. Check if the password is shorter than 6 characters.
+4. The answer is the maximum of missing types and characters needed to reach length 6.
+
+This guarantees the password becomes strong with the minimum additional characters.

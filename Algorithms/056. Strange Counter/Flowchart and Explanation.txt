@@ -1,0 +1,19 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────────────────────────┐
+│ Initialize start = 1, value = 3 │
+└──────┬──────────────────────────┘
+       │
+┌──────┴───────────────────────────┐
+│ While t > start + value - 1:     │
+│     start += value               │
+│     value *= 2                   │
+└──────┬───────────────────────────┘
+       │
+┌──────┴─────────────────────┐
+│ Return value - (t - start) │
+└────────────────────────────┘
+
+The strangeCounter function calculates the value of a counter at time t. The counter starts at 3 and halves its countdown cycle length in powers of 2: 3, 6, 12, 24, etc. By iteratively updating the start time and cycle length, the function finds the current cycle containing t and returns the corresponding value using the formula value - (t - start). This ensures O(log t) efficiency without simulating each second.

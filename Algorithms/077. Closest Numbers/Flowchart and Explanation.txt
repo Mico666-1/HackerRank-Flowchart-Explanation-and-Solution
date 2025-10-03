@@ -1,0 +1,31 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────┐
+│ Read integer n and list arr│
+│ Sort arr in ascending order│
+│ Initialize result = []     │
+│ Initialize minDiff = ∞     │
+└──────┬─────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 1 to arr.Count - 1         │
+│  diff = arr[i] - arr[i-1]          │
+│  If diff < minDiff                 │
+│      minDiff = diff                │
+│      Clear result                  │
+│      Add arr[i-1] and arr[i]       │
+│  Else if diff == minDiff           │
+│      Add arr[i-1] and arr[i]       │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return result      │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function finds all pairs of numbers with the smallest absolute difference. It first sorts the array to ensure adjacent elements are the closest candidates. It then iterates through the array, updating the minimum difference and storing the corresponding pairs. This approach guarantees that all closest pairs are returned efficiently.

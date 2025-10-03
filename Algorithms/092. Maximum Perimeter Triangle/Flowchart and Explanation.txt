@@ -1,0 +1,25 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input sticks array            │
+│ Sort sticks in ascending order     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────────────────────────────────────────┐
+│ For i = count-1 down to 2                        │
+│  a = sticks[i-2], b = sticks[i-1], c = sticks[i] │
+│  If a + b > c                                    │
+│      Return [a, b, c]                            │
+└──────┬───────────────────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return [-1]        │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function finds a non-degenerate triangle with the maximum perimeter using given stick lengths. By sorting the sticks in ascending order, it checks triplets from the largest values downward. The first triplet satisfying the triangle inequality a + b > c guarantees the largest perimeter. If no triplet forms a valid triangle, it returns [-1]. This ensures an efficient O(n log n) solution due to sorting.

@@ -1,0 +1,34 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input strings s1 and s2       │
+│ Initialize freq[26] = 0            │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in s1              │
+│  freq[c - 'a']++                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in s2              │
+│  freq[c - 'a']--                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ deletions = 0                      │
+│ For each count in freq             │
+│  deletions += |count|              │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return deletions   │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function calculates the minimum number of character deletions needed to make two strings anagrams. It counts the frequency of letters in s1 and subtracts frequencies from s2. The sum of absolute values of the resulting frequency array represents the total deletions required. This approach efficiently handles the problem in O(n) time.

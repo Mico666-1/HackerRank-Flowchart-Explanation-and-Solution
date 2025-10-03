@@ -1,0 +1,27 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────────┐
+│ Read input string s              │
+│ Initialize target = "hackerrank" │
+│ index = 0                        │
+└──────┬───────────────────────────┘
+       │
+┌──────┴──────────────────────┐
+│ For each char c in s        │
+│  If c == target[index]      │
+│      index++                │
+│  If index == target.Length  │
+│      Return "YES"           │
+└──────┬──────────────────────┘
+       │
+┌──────┴───────────┐
+│ Return "NO"      │
+└──────┬───────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function checks whether the string "hackerrank" appears as a subsequence in the input string. It iterates through each character of s and matches it against the current character in "hackerrank". If all characters are matched in order, it returns "YES"; otherwise, "NO". This method efficiently verifies subsequences without needing to modify the original string.

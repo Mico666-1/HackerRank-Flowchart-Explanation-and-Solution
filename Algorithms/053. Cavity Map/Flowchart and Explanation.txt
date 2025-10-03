@@ -1,0 +1,41 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴───────────────────┐
+│ Convert grid to char[][] │
+└──────┬───────────────────┘
+       │
+┌──────┴───────────┐
+│ For i = 1 to n-2 │
+└──────┬───────────┘
+       │
+┌──────┴───────────┐
+│ For j = 1 to n-2 │
+└──────┬───────────┘
+       │
+┌──────┴───────────────────────┐
+│ If map[i][j] > all neighbors │
+└──────┬───────────────────────┘
+       │
+┌──────┴──────────┐
+│ map[i][j] = 'X' │
+└──────┬──────────┘
+       │
+┌──────┴──────┐
+│ End For j   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ End For i   │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────────┐
+│ Convert map back to List<string> │
+└──────┬───────────────────────────┘
+       │
+┌──────┴────────┐
+│ Return result │
+└───────────────┘
+
+The cavityMap function scans the grid excluding the border cells. For each inner cell, it compares the value with its four neighbors (up, down, left, right). If the current cell is strictly greater than all neighbors, it is marked with 'X'. The function then converts the 2D char array back into a list of strings and returns it. This approach ensures all cavities are correctly marked while border cells remain unchanged.

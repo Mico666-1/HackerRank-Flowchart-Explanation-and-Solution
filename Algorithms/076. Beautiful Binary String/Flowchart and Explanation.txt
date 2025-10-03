@@ -1,0 +1,28 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────┐
+│ Read integer n and string b│
+│ Initialize changes = 0     │
+│ Initialize i = 0           │
+└──────┬─────────────────────┘
+       │
+┌──────┴────────────────────────────┐
+│ While i <= b.Length - 3           │
+│  If b.Substring(i,3) == "010"     │
+│      changes++                    │
+│      i += 3                       │
+│  Else                             │
+│      i++                          │
+└──────┬────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return changes     │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function counts the minimum number of changes needed so that the binary string contains no "010" subsequences. It iterates through the string and whenever it finds "010", it increments changes and skips the next two characters to avoid overlapping changes. This ensures an efficient single-pass solution.

@@ -1,0 +1,39 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴──────────────────────────────┐
+│ Read input string s                 │
+│ Initialize found = false            │
+└──────┬──────────────────────────────┘
+       │
+┌──────┴────────────────────────────────────────────────┐
+│ For len = 1 to s.Length / 2                           │
+│  firstNumStr = s.Substring(0, len)                    │
+│  firstNum = BigInteger.Parse(firstNumStr)             │
+│  nextNum = firstNum                                   │
+│  index = 0                                            │
+│                                                       │
+│  While index < s.Length                               │
+│      nextStr = nextNum.ToString()                     │
+│      If s.Substring(index, nextStr.Length) != nextStr │
+│          Break                                        │
+│      index += nextStr.Length                          │
+│      nextNum += 1                                     │
+│                                                       │
+│  If index == s.Length                                 │
+│      Print "YES " + firstNum                          │
+│      found = true                                     │
+│      Break loop                                       │
+└──────┬────────────────────────────────────────────────┘
+       │
+┌──────┴──────────────────────────────┐
+│ If found == false                   │
+│     Print "NO"                      │
+└──────┬──────────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function checks if a string can be split into a sequence of increasing consecutive numbers. It tries all possible starting number lengths, then builds the sequence incrementally, comparing each expected number to the string. If the entire string matches the sequence, it prints "YES" and the first number; otherwise, it prints "NO". Using BigInteger ensures very large numbers are handled.

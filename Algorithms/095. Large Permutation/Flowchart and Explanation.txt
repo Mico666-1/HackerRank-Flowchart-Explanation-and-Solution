@@ -1,0 +1,29 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input n, k, arr               │
+│ Create indexMap: value -> index    │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 0 to n-1 and k > 0         │
+│  desired = n - i                   │
+│  If arr[i] == desired              │
+│      Continue                      │
+│  idx = indexMap[desired]           │
+│  Swap arr[i] with arr[idx]         │
+│  Update indexMap accordingly       │
+│  k--                               │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return arr         │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function creates the largest possible permutation using at most k swaps. It tracks indices of elements in a dictionary for O(1) lookup. Starting from the left, it swaps the current element with the largest remaining element not yet in place. Each swap reduces k by 1. This greedy approach ensures the permutation is maximized efficiently.

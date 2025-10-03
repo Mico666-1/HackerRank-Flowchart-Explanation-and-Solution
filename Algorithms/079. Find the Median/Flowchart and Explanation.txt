@@ -1,0 +1,19 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────┐
+│ Read integer n and list arr│
+│ Sort arr in ascending order│
+└──────┬─────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ n = arr.Count                      │
+│ Return arr[n / 2]                  │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function finds the median of a list by first sorting the array in ascending order. Since the problem guarantees an odd number of elements, the median is simply the middle element, which is accessed using arr[n / 2]. This provides an efficient O(n log n) solution using built-in sorting.

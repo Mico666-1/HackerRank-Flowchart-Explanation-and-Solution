@@ -1,0 +1,26 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input string s                │
+│ Initialize seen[26] = false        │
+│ cost = 0                           │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in s               │
+│  If seen[c - 'a'] == false         │
+│      cost++                        │
+│      seen[c - 'a'] = true          │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return cost        │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function calculates the minimum cost to construct a string by counting the number of distinct characters. Each unique character contributes a cost of 1, while repeated characters can be copied at no additional cost. This approach efficiently determines the total cost in O(n) time.

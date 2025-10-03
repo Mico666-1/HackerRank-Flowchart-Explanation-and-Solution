@@ -1,0 +1,26 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────┐
+│ Read input string s          │
+│ n = s.Length                 │
+└──────┬───────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 1 to n - 1                 │
+│  diffOriginal = |s[i] - s[i-1]|    │
+│  diffReversed = |s[n-i] - s[n-i-1]|│
+│  If diffOriginal != diffReversed   │
+│      Return "Not Funny"            │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return "Funny"     │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function checks whether a string is "funny" by comparing the absolute differences of adjacent characters in the original string with those in the reversed string. If all differences match, the string is "Funny"; otherwise, it is "Not Funny". This approach efficiently compares the string and its reverse in a single pass.

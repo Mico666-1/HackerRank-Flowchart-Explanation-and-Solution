@@ -1,0 +1,29 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read integer n and list arr        │
+│ Initialize shifts = 0              │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 1 to arr.Count - 1         │
+│  key = arr[i]                      │
+│  j = i - 1                         │
+│  While j >= 0 and arr[j] > key     │
+│      arr[j + 1] = arr[j]           │
+│      j--                           │
+│      shifts++                      │
+│  arr[j + 1] = key                  │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────────┐
+│ Return shifts    │
+└──────┬───────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+This program counts the number of shifts required to sort an array using insertion sort. For each element, it compares with previous elements and moves larger elements one position to the right, incrementing the shifts counter. Finally, it returns the total number of shifts, representing the "running time" of the insertion sort in terms of element movements.

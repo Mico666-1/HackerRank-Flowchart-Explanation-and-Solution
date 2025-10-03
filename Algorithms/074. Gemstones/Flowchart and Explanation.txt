@@ -1,0 +1,24 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴──────────────────────────────┐
+│ Read integer n and list of strings  │
+│ Initialize HashSet common = letters │
+│ from first string                   │
+└──────┬──────────────────────────────┘
+       │
+┌──────┴──────────────────────────────┐
+│ For i = 1 to n-1                    │
+│  common.IntersectWith(arr[i])       │
+└──────┬──────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return common.Count│
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function counts "gem-elements" that appear in every rock. It starts with the set of letters from the first rock, then intersects this set with letters from each subsequent rock. The resulting set contains only letters present in all rocks, and its size is returned. This efficiently determines common elements using set operations.

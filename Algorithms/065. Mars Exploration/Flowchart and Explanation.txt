@@ -1,0 +1,24 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴──────────────────────┐
+│ Read input string s         │
+│ Initialize alteredCount = 0 │
+└──────┬──────────────────────┘
+       │
+┌──────┴─────────────────────┐
+│ For i = 0 to s.Length - 1  │
+│  If s[i] != "SOS"[i % 3]   │
+│      Increment alteredCount│
+└──────┬─────────────────────┘
+       │
+┌──────┴──────────────┐
+│ Return alteredCount │
+└──────┬──────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The program counts how many characters in the received Mars message differ from the expected repeated "SOS" pattern. It iterates through each character of the input string, comparing it to the corresponding character in "SOS" using modulo arithmetic (i % 3). Each mismatch increments the alteredCount, which is finally returned. This efficiently detects all altered letters in the transmitted message.

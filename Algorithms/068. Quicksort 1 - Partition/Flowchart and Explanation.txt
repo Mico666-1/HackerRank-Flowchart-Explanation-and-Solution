@@ -1,0 +1,34 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴───────────────────────┐
+│ Read integer n and list arr  │
+│ If arr.Count <= 1            │
+│    Return arr                │
+└──────┬───────────────────────┘
+       │
+┌──────┴───────────────────────┐
+│ pivot = arr[0]               │
+│ Initialize left = []         │
+│ Initialize right = []        │
+└──────┬───────────────────────┘
+       │
+┌──────┴───────────────────────────┐
+│ For i = 1 to arr.Count - 1       │
+│  If arr[i] <= pivot              │
+│      Add arr[i] to left          │
+│  Else                            │
+│      Add arr[i] to right         │
+└──────┬───────────────────────────┘
+       │
+┌──────┴───────────────────────────┐
+│ result = left + [pivot] + right  │
+│ Return result                    │
+└──────┬───────────────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function performs a single-step quicksort partition. It chooses the first element as the pivot, separates all elements into left (≤ pivot) and right (> pivot) lists, and combines them in order: left + pivot + right. This implements the partitioning step of quicksort without recursive sorting, producing a partially sorted array with all elements ≤ pivot on the left and > pivot on the right.

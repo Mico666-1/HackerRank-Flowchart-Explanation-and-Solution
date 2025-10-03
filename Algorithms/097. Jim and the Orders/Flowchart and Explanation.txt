@@ -1,0 +1,29 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read orders array (orderTime, prep)│
+│ Initialize finishTimes list        │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴────────────────────────────────┐
+│ For i = 0 to n-1                      │
+│  finishTime = orderTime + prepTime    │
+│  Add (finishTime, i+1) to finishTimes │
+└──────┬────────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Sort finishTimes by finishTime     │
+│ If tie, sort by index              │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────┐
+│ Return list of indices │
+└──────┬─────────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function computes when each customer’s order will finish (orderTime + prepTime) and pairs it with the customer’s 1-based index. It then sorts the orders by finish time, breaking ties using the original order index. Finally, it returns the indices in the sequence the orders will be served, providing the correct service order efficiently.

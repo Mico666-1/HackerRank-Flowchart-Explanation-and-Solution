@@ -1,0 +1,40 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input k and contests          │
+│ totalLuck = 0                      │
+│ important = empty list             │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each contest                   │
+│  If important (importance==1)      │
+│      Add luck to important list    │
+│  Else                              │
+│      totalLuck += luck             │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Sort important list ascending      │
+│ n = count of important             │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 0 to n-1                   │
+│  If i < n - k                      │
+│      totalLuck -= important[i]     │
+│  Else                              │
+│      totalLuck += important[i]     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return totalLuck   │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function maximizes total luck by losing all unimportant contests and selectively losing the most valuable important contests. First, important contests are separated and sorted. Marc must win the smallest n - k important contests to minimize lost luck and can lose the largest k important contests. This ensures the optimal total luck efficiently.

@@ -1,0 +1,24 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────┐
+│ Read input string s        │
+│ Initialize deletions = 0   │
+└──────┬─────────────────────┘
+       │
+┌──────┴─────────────────────────┐
+│ For i = 1 to s.Length - 1      │
+│  If s[i] == s[i-1]             │
+│      deletions++               │
+└──────┬─────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return deletions   │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function calculates the minimum number of deletions needed so that no two adjacent characters are the same. It iterates through the string and increments the deletions counter whenever a character is identical to the previous one. This gives an efficient O(n) solution.

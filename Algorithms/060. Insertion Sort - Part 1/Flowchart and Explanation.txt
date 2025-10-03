@@ -1,0 +1,38 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴────────────┐
+│ key = arr[n-1]    │
+└──────┬────────────┘
+       │
+┌──────┴────────────┐
+│ i = n - 2         │
+└──────┬────────────┘
+       │
+┌──────┴────────────────────────┐
+│ While i >= 0 AND arr[i] > key │
+└──────┬────────────────────────┘
+       │
+┌──────┴────────────┐
+│ arr[i+1] = arr[i] │
+│ print arr         │
+│ i--               │
+└──────┬────────────┘
+       │
+┌──────┴────────────┐
+│ arr[i+1] = key    │
+│ print arr         │
+└──────┬────────────┘
+       │
+┌──────┴──────┐
+│   End       │
+└─────────────┘
+
+This function inserts the last element (key) into its correct position within the sorted portion of the array.
+
+1. Start from the second last element and shift elements right if they are greater than key.
+2. Print the array after each shift to show progress.
+3. Once the correct spot is found, insert key and print the final array.
+
+This is the standard insertion sort step for the last element, which runs in O(n) time for this step.

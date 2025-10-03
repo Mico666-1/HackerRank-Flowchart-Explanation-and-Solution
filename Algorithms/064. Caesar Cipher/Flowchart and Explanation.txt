@@ -1,0 +1,29 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴──────────────────────────┐
+│ Initialize StringBuilder result │
+│ Normalize shift: k = k % 26     │
+└──────┬──────────────────────────┘
+       │
+┌──────┴────────────────────────┐
+│ For each char c in string s   │
+│  If c is uppercase:           │
+│      Shift within 'A'-'Z'     │
+│  Else if c is lowercase:      │
+│      Shift within 'a'-'z'     │
+│  Else:                        │
+│      Keep c as is             │
+│  Append to result             │
+└──────┬────────────────────────┘
+       │
+┌──────┴───────────┐
+│ Return result    │
+└──────┬───────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The program encodes a string using the Caesar cipher by shifting each letter by a specified integer k. Uppercase and lowercase letters are shifted within their respective alphabet ranges using modular arithmetic, while non-letter characters remain unchanged. The shifted characters are collected into a StringBuilder and returned as the resulting encrypted string.

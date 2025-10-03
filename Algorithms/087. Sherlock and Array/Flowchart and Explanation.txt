@@ -1,0 +1,27 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input array arr               │
+│ totalSum = sum of all elements     │
+│ leftSum = 0                        │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴──────────────────────────────────┐
+│ For i = 0 to arr.Count - 1              │
+│  rightSum = totalSum - leftSum - arr[i] │
+│  If leftSum == rightSum                 │
+│      Return "YES"                       │
+│  leftSum += arr[i]                      │
+└──────┬──────────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return "NO"        │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function checks if there exists an element in the array such that the sum of elements to its left equals the sum of elements to its right. It calculates the total sum once and iterates through the array, maintaining a running leftSum. For each element, it calculates rightSum = totalSum - leftSum - current element and compares it with leftSum. This method efficiently solves the problem in O(n) time.

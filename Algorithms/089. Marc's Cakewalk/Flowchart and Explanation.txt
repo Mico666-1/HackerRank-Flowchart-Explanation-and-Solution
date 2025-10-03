@@ -1,0 +1,24 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input array calorie           │
+│ Sort calorie in descending order   │
+│ miles = 0                          │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 0 to calorie.Count - 1     │
+│  miles += 2^i * calorie[i]         │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return miles       │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function calculates the minimum total “miles” Marc must walk if he eats cupcakes with different calorie values. By sorting the calories in descending order and consuming higher-calorie cupcakes first, the multiplier 2^i is applied optimally to minimize the total. The approach ensures an O(n log n) solution due to sorting.

@@ -1,0 +1,29 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input strings s1 and s2       │
+│ Initialize letters[26] = false     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in s1              │
+│  letters[c - 'a'] = true           │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in s2              │
+│  If letters[c - 'a'] == true       │
+│      Return "YES"                  │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return "NO"        │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function determines if two strings share a common substring by checking for any common character. It marks the characters of s1 in a boolean array and then iterates through s2, returning "YES" immediately if a match is found. If no match exists, it returns "NO". This approach is efficient with O(n + m) complexity.

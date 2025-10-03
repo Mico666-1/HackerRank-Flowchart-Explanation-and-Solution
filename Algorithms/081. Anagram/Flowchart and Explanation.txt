@@ -1,0 +1,43 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read input string s                │
+│ n = s.Length                       │
+│ If n % 2 != 0                      │
+│      Return -1                     │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ first = s[0..n/2-1]                │
+│ second = s[n/2..n-1]               │
+│ Initialize freq[26] = 0            │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in first           │
+│  freq[c - 'a']++                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For each char c in second          │
+│  freq[c - 'a']--                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ changes = 0                        │
+│ For each count in freq             │
+│  If count > 0                      │
+│      changes += count              │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return changes     │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function determines the minimum number of character changes needed to make the two halves of a string anagrams. If the string has odd length, it returns -1. It counts the frequency of letters in the first half and subtracts frequencies using the second half. The sum of positive differences indicates the required changes.

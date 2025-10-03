@@ -1,0 +1,41 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ i = 1 to n-1       │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ key = arr[i]       │
+│ j = i - 1          │
+└──────┬─────────────┘
+       │
+┌──────┴──────────────────────┐
+│ while j >=0 && arr[j] > key │
+│    arr[j+1] = arr[j]        │
+│    j = j - 1                │
+└──────┬──────────────────────┘
+       │
+┌──────┴─────────────┐
+│ arr[j+1] = key     │
+└──────┬─────────────┘
+       │
+┌──────┴─────────────┐
+│ Print arr          │
+└──────┬─────────────┘
+       │
+┌──────┴───────┐
+│   End        │
+└──────────────┘
+
+The algorithm works as follows:
+
+1. Start from the second element (i = 1).
+2. Store the current element as key.
+3. Compare key with elements before it and shift all larger elements one position to the right.
+4. Insert the key in its correct sorted position.
+5. Print the array after placing the key.
+6. Repeat for all elements until the array is fully sorted.
+
+This method visually shows the progress of the insertion sort after each step.

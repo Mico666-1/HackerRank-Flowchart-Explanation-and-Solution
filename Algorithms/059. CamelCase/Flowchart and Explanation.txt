@@ -1,0 +1,25 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴────────┐
+│ Read string s │
+└──────┬────────┘
+       │
+┌──────┴───────────────┐
+│ Initialize words = 1 │
+└──────┬───────────────┘
+       │
+┌──────┴───────────────┐
+│ For each char c in s │
+└──────┬───────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ If c is uppercase, increment words │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴───────┐
+│ Return words │
+└──────────────┘
+
+CamelCase strings start with a lowercase letter and capitalize each subsequent word's first letter. By counting the uppercase letters and adding 1 for the first word, we obtain the total number of words in the string. This solution runs in O(n) time, scanning each character once.

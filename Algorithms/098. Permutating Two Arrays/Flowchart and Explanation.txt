@@ -1,0 +1,25 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴─────────────────────────────┐
+│ Read k, arrays A and B             │
+│ Sort A ascending                   │
+│ Sort B descending                  │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ For i = 0 to A.Count - 1           │
+│  If A[i] + B[i] < k                │
+│      Return "NO"                   │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────┐
+│ Return "YES"       │
+└──────┬─────────────┘
+       │
+┌──────┴─────┐
+│    End     │
+└────────────┘
+
+The function checks if arrays A and B can be permuted so that A[i] + B[i] ≥ k for all i. It sorts A in ascending order and B in descending order, then checks each corresponding pair. If any sum is less than k, it returns "NO"; otherwise, all pairs satisfy the condition, and it returns "YES". This is an efficient greedy approach.
