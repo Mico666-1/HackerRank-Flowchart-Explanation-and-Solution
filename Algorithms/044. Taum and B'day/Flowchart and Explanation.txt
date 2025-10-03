@@ -1,0 +1,36 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Set costBlack│
+│ = bc,        │
+│ costWhite=wc │
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ If bc>wc+z  │
+│ then        │
+│ costBlack=wc│
+│ + z         │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ If wc>bc+z  │
+│ then        │
+│ costWhite=bc│
+│ + z         │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ totalCost =  │
+│ b*costBlack  │
+│ + w*costWhite│
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ Return      │
+│ totalCost   │
+└─────────────┘
+
+The taumBday function calculates the minimum cost to buy b black and w white gifts. It first checks if it’s cheaper to convert one type to the other using the conversion cost z. Then, it calculates the total cost by multiplying the quantities by their respective effective costs. This ensures that the total cost is minimized.

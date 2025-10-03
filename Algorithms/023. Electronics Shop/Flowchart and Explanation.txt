@@ -1,0 +1,39 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read input  │
+│ values      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ For each    │
+│ keyboard    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ For each    │
+│ drive       │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Check sum ≤ │
+│ budget b    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Track max   │
+│ spent value │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print max   │
+│ or -1       │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program checks all combinations of keyboards and USB drives, calculates their total price, and ensures it does not exceed the budget. It keeps track of the highest valid total and returns it. If no combination is affordable, the function returns -1.

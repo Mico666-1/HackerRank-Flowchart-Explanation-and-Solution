@@ -1,0 +1,40 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────────────┐
+│ minDistance = MaxValue │
+└──────┬─────────────────┘
+       │
+┌──────┴───────────┐
+│ For i = 0 to n-2 │
+└──────┬───────────┘
+       │
+┌──────┴─────────────┐
+│ For j = i+1 to n-1 │
+└──────┬─────────────┘
+       │
+┌──────┴──────────┐
+│ If a[i] == a[j] │
+└──────┬──────────┘
+       │
+┌──────┴─────────┐
+│ distance = j-i │
+└──────┬─────────┘
+       │
+┌──────┴────────────────────┐
+│ If distance < minDistance │
+└──────┬────────────────────┘
+       │
+┌──────┴─────────────────┐
+│ minDistance = distance │
+└──────┬─────────────────┘
+       │
+┌──────┴────────────────────┐
+│ After loops               │
+│ If minDistance = MaxValue │
+│    return -1              │
+│ Else return minDistance   │
+└───────────────────────────┘
+
+The minimumDistances function finds the smallest distance between equal elements in the array. It iterates over all pairs of indices (i, j) with j > i and checks if a[i] == a[j]. If a match is found, the distance j - i is compared with the current minimum and updated if smaller. After examining all pairs, if no equal elements exist, it returns -1; otherwise, it returns the smallest distance found.

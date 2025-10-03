@@ -1,0 +1,44 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Initialize  │
+│ commonLength│
+│ = 0         │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Find common │
+│ prefix      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ totalOps =  │
+│ (s-len) +   │
+│ (t-len)     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ If totalOps │
+│ > k return  │
+│ "No"        │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Else if k-   │
+│ totalOps %2=0│
+│ or k>=s+t    │
+│ return "Yes" │
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ Else return │
+│ "No"        │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The function calculates the longest common prefix between the strings s and t to determine the minimum number of operations needed to convert s into t. If the required operations exceed k, the result is "No". If there are enough extra operations to either perform redundant deletions/appends in pairs or delete the whole string and rebuild, the result is "Yes". Otherwise, it returns "No".

@@ -1,0 +1,31 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read x, y,  │
+│ and z       │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Compute     │
+│ |x - z| and │
+│ |y - z|     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Compare     │
+│ distances   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print "Cat  │
+│ A", "Cat B" │
+│ or "Mouse C"│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program calculates the distance of both cats from the mouse. If Cat A is closer, it prints "Cat A", if Cat B is closer, it prints "Cat B". If both are at the same distance, the mouse escapes and it prints "Mouse C".

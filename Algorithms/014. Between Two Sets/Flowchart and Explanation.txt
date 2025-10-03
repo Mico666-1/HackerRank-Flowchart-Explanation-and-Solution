@@ -1,0 +1,40 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ minScore = scores[0]        │
+│ maxScore = scores[0]        │
+│ minCount = 0                │
+│ maxCount = 0                │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ For each score in scores[1:]│
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ score > maxScore?           │
+└──────┬──────────────┬───────┘
+      Yes             No
+       │              │
+┌──────┴────────┐ ┌───┴─────────────┐
+│ maxScore=score│ │ score<minScore? │
+│ maxCount++    │ └──────┬──────────┘
+└──────────────┬┘        │
+               │        Yes
+               │         │
+               │   ┌─────┴──────────┐
+               │   │ minScore=score │
+               │   │ minCount++     │
+               │   └────────────────┘
+               │
+┌──────────────┴────────────────┐
+│ Continue to next score        │
+└─────────────┬─────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Return [maxCount, minCount] │
+└─────────────────────────────┘
+
+The function tracks the number of times a player breaks their record for highest and lowest scores. It initializes minScore and maxScore to the first game's score and counts set to 0. Then it iterates through the remaining scores, updating the maximum and minimum scores when a new record is set, incrementing the corresponding counters. Finally, it returns a list containing [maxCount, minCount].

@@ -1,0 +1,37 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read inputs │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Loop days i │
+│ to j        │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Reverse day │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Check if    │
+│ divisible by│
+│ k           │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Count valid │
+│ days        │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print result│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program iterates over each day between i and j, reverses the digits of the current day, and checks whether the absolute difference between the original day and its reverse is divisible by k. If divisible, the day is considered beautiful and counted. Finally, it prints the total number of beautiful days.

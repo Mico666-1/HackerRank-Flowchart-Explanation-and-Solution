@@ -1,0 +1,41 @@
+┌───────────────────────────┐
+│       Start Program       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│   Read integer n          │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Read list arr of integers │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Initialize countPositive=0│
+│ Initialize countNegative=0│
+│ Initialize countZero=0    │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ For each number in arr:   │
+│  Increment respective     │
+│  count based on sign      │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Calculate ratios:         │
+│ positive/total            │
+│ negative/total            │
+│ zero/total                │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Print ratios with 6       │
+│ decimal places            │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│         End Program       │
+└───────────────────────────┘
+
+The program reads a list of integers and calculates the ratios of positive, negative, and zero elements in the list. The plusMinus function prints these ratios as decimal values with six decimal places.

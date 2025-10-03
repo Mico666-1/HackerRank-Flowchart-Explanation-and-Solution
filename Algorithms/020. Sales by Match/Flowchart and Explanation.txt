@@ -1,0 +1,23 @@
+┌───────────────┐
+│     Start     │
+└──────┬────────┘
+       │
+┌──────┴───────────┐
+│ Count socks in   │
+│ dictionary       │
+└──────┬───────────┘
+       │
+┌──────┴───────────┐
+│ Calculate pairs  │
+│ (value / 2)      │
+└──────┬───────────┘
+       │
+┌──────┴────────┐
+│   Return sum  │
+└──────┬────────┘
+       │
+┌──────┴────────┐
+│      End      │
+└───────────────┘
+
+The program counts occurrences of each sock color using a dictionary, then calculates how many pairs can be formed by dividing each count by two. Finally, it sums these pairs and returns the total number of sock pairs.

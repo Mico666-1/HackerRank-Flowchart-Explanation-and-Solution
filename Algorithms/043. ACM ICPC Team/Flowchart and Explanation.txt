@@ -1,0 +1,36 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Initialize  │
+│ maxTopics=0 │
+│ teamCount=0 │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Loop i=0..n │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Loop j=i+1..n│
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ Count topics│
+│ known by i &│
+│ j           │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Update max  │
+│ and count   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return      │
+│ [maxTopics, │
+│ teamCount]  │
+└─────────────┘
+
+The acmTeam function computes the maximum number of topics a 2-person team can collectively know and counts how many teams achieve that maximum. It iterates through all unique pairs of participants, calculates the number of topics known by either member of the pair, and updates the maximum and team count accordingly. The final result is a list containing the maximum topics any team knows and the number of teams achieving it.

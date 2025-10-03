@@ -1,0 +1,37 @@
+┌───────────────────────────┐
+│       Start Program       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Read list a (3 integers)  │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Read list b (3 integers)  │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Initialize aliceScore=0   │
+│ Initialize bobScore=0     │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ For i in 0 to 2:          │
+│  Compare a[i] and b[i]    │
+│  Update scores accordingly│
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Return list [aliceScore,  │
+│               bobScore]   │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Write result to output    │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│        End Program        │
+└───────────────────────────┘
+
+This program compares two lists of integers a and b, each representing scores of two players in three categories. The function compareTriplets compares elements at each index and awards points to the player with the higher score. It returns a list with two integers representing the total points of each player.

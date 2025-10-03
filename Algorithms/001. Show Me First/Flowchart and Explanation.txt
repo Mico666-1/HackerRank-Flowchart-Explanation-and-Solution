@@ -1,0 +1,26 @@
+┌───────────────────┐
+│   Start Program   │
+└──────────┬────────┘
+           │
+┌──────────┴────────┐
+│  Read val1 input  │
+└──────────┬────────┘
+           │
+┌──────────┴────────┐
+│  Read val2 input  │
+└──────────┬────────┘
+           │
+┌──────────┴───────────────┐
+│ Call solveMeFirst(a, b)  │
+│   (returns a + b)        │
+└──────────┬───────────────┘
+           │
+┌──────────┴────────┐
+│     Print sum     │
+└──────────┬────────┘
+           │
+┌──────────┴────────┐
+│    End Program    │
+└───────────────────┘
+
+This C# program reads two integers from the user, passes them to the function solveMeFirst, which returns their sum. The program then prints the sum to the console. The solveMeFirst method simply adds the two input numbers and returns the result.

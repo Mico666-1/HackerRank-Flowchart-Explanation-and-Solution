@@ -1,0 +1,37 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Set jumps=0 │
+│ Set i=0     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ While i<end │
+│ of clouds   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ If i+2 in   │
+│ range &     │
+│ c[i+2]==0   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ i += 2      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Else i +=1  │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ jumps++     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return jumps│
+└─────────────┘
+
+The jumpingOnClouds function calculates the minimum number of jumps needed to traverse an array of clouds where 0 is safe and 1 is unsafe. The player tries to jump 2 steps whenever possible; if not, they jump 1 step. Each jump increments a counter until the last cloud is reached. This greedy approach ensures the fewest jumps without landing on unsafe clouds.

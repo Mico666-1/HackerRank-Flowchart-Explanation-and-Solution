@@ -1,0 +1,40 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read input n│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ shared = 5  │
+│ total = 0   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Loop 1 to n │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ liked=shared│
+│ ÷ 2         │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ total+=liked│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ shared=liked│
+│ × 3         │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print total │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program simulates daily viral advertising by starting with 5 people receiving the ad. Each day, half of them like it and are counted toward the cumulative total, while each liker shares the ad with 3 more people. This loop continues for n days, and the program finally returns the total number of likes accumulated.

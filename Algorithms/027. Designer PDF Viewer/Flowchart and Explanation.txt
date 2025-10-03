@@ -1,0 +1,28 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read heights│
+│ and word    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Find max    │
+│ letter size │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Multiply by │
+│ word length │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print result│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program finds the tallest letter in the given word by checking each character’s height from the alphabet list. It then calculates the highlighted area by multiplying the tallest letter height with the length of the word, and finally outputs the result.

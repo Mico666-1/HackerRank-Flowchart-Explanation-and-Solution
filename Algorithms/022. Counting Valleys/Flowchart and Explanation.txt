@@ -1,0 +1,29 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read steps, │
+│   path      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Traverse    │
+│ path steps  │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Track level │
+│ and valleys │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return no.  │
+│ of valleys  │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program counts valleys by simulating the hiker’s path: each 'U' increases elevation and each 'D' decreases it. A valley is completed whenever the hiker comes back to sea level after being below it. The function keeps track of elevation changes and increments the valley count when appropriate.

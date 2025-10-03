@@ -1,0 +1,51 @@
+┌───────────────────────────────┐
+│           Start               │
+└─────────────┬─────────────────┘
+              │
+┌─────────────┴───────────────────────┐
+│ Initialize empty list roundedGrades │
+└─────────────┬───────────────────────┘
+              │
+┌─────────────┴────────────────┐
+│ For each grade in grades     │
+└─────────────┬────────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Is grade < 38?              │
+└───────┬───────────┬─────────┘
+       Yes          No
+        │           │
+┌───────┴────────┐  │
+│ Add grade to   │  │
+│ roundedGrades  │  │
+└────────────────┘  │
+                    │
+       ┌────────────┴──────────────┐
+       │ Calculate nextMultipleOf5 │
+       │ = ((grade / 5) + 1) * 5   │
+       └─────────────┬─────────────┘
+                     │
+       ┌─────────────┴───────────────────┐
+       │ Is nextMultipleOf5 - grade < 3? │
+       └───────┬────────────┬────────────┘
+              Yes           No
+               │            │
+      ┌────────┴────────┐   │
+      │ Add nextMultiple│   │
+      │ Of5 to list     │   │
+      └─────────────────┘   │
+                            │
+                  ┌─────────┴──────┐
+                  │ Add grade to   │
+                  │ roundedGrades  │
+                  └────────┬───────┘
+                           │
+┌──────────────────────────┴───┐
+│ End For Loop                 │
+└─────────────┬────────────────┘
+              │
+┌─────────────┴────────────────┐
+│ Return roundedGrades         │
+└──────────────────────────────┘
+
+The function iterates through each grade in the input list. If a grade is less than 38, it is left unchanged because it is failing. For grades 38 or higher, the function calculates the next multiple of 5 and rounds the grade up to it only if the difference is less than 3. Otherwise, the grade remains the same. The process ensures that grades are only rounded when it benefits the student without altering failing grades. The resulting list of grades is then returned.

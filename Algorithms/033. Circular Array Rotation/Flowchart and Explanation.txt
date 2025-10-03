@@ -1,0 +1,40 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read n, k, q│
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Read array a │
+└──────┬───────┘
+       │
+┌──────┴───────┐
+│ Read queries │
+└──────┬───────┘
+       │
+┌──────┴───────┐
+│ k = k % n    │
+└──────┬───────┘
+       │
+┌──────┴───────┐
+│ Rotate array │
+│ (shift right)│
+└──────┬───────┘
+       │
+┌──────┴─────────────┐
+│ For each query     │
+│ result = rotated[q]│
+└──────┬─────────────┘
+       │
+┌──────┴───────┐
+│ Print result │
+└──────┬───────┘
+       │
+┌──────┴───────┐
+│    End       │
+└──────────────┘
+
+
+The program rotates the array a to the right k times and retrieves the values at specified query indices. It uses modular arithmetic (i - k + n) % n to compute the new index for each element after rotation efficiently, avoiding multiple shifts. Then, for each query, it simply reads the value from the rotated array, ensuring fast and accurate results without physically performing k rotations.

@@ -1,0 +1,41 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Check if    │
+│ y1 > y2     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return 10000│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Check if    │
+│ y1 == y2 &  │
+│ m1 > m2     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return 500*(│
+│ m1 - m2)    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Check if    │
+│ y1==y2 &    │
+│ m1==m2 & d1>│
+│ d2          │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return 15*( │
+│ d1 - d2)    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return 0    │
+└─────────────┘
+
+The libraryFine function calculates the library fine based on the returned book's date compared to the due date. It first checks if the return year is late, then if the return month is late within the same year, and finally if the return day is late within the same month and year. If none of these conditions are true, no fine is applied. The function efficiently determines the fine using simple conditional checks.

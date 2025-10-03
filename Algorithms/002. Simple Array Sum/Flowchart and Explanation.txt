@@ -1,0 +1,26 @@
+┌───────────────────────────┐
+│       Start Program       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│    Read arCount (int)     │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Read list of integers ar  │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Call simpleArraySum(ar)   │
+│   (sum all elements)      │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│   Write result to output  │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│        End Program        │
+└───────────────────────────┘
+
+This program reads an integer arCount representing the number of elements, then reads a list of integers. The function simpleArraySum takes this list and returns the sum of all elements. The result is then printed to the output.

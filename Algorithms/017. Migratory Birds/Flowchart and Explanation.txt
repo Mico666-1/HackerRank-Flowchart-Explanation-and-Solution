@@ -1,0 +1,33 @@
+┌───────────────┐
+│    Start      │
+└───────┬───────┘
+        │
+┌───────┴───────┐
+│ Initialize    │
+│ dictionary    │
+└───────┬───────┘
+        │
+┌───────┴───────┐
+│ For each bird │
+│ in arr        │
+└───────┬───────┘
+        │
+┌───────┴───────┐
+│ Update bird   │
+│ frequency     │
+└───────┬───────┘
+        │
+┌───────┴───────┐
+│ Find max freq │
+│ with min ID   │
+└───────┬───────┘
+        │
+┌───────┴───────┐
+│ Return result │
+└───────┬───────┘
+        │
+┌───────┴───────┐
+│     End       │
+└───────────────┘
+
+The program uses a dictionary to count how many times each bird type appears. After counting, it loops through the dictionary to find the bird with the highest frequency. If two bird types have the same frequency, the smaller ID is chosen. The function then returns that bird type as the result.

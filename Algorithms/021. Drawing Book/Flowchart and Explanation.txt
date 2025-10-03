@@ -1,0 +1,29 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read n, p   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Calc from   │
+│ front (p/2) │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Calc from   │
+│ back (n/2 - │
+│ p/2)        │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return min  │
+│ of two      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program calculates the minimum number of page turns required to reach a given page p in a book with n pages. It computes turns from the front (p/2) and from the back (n/2 - p/2), then returns the smaller value to ensure the least flips are made.

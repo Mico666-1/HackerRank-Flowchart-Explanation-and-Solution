@@ -1,0 +1,26 @@
+┌──────────────────────────────┐
+│         Start Program        │
+└───────────────┬──────────────┘
+                │
+┌───────────────┴────────────────────┐
+│ Read time string s (hh:mm:ssAM/PM) │
+└───────────────┬────────────────────┘
+                │
+┌───────────────┴───────────────────────┐
+│ Extract hour, minutes, seconds, AM/PM │
+└───────────────┬───────────────────────┘
+                │
+┌───────────────┴────────────────────┐
+│ If AM and hour == 12, set hour = 0 │
+│ Else if PM and hour != 12, add 12  │
+└───────────────┬────────────────────┘
+                │
+┌───────────────┴───────────────────────┐
+│ Format and return 24-hour time string │
+└───────────────┬───────────────────────┘
+                │
+┌───────────────┴──────────────┐
+│         End Program          │
+└──────────────────────────────┘
+
+The program converts a 12-hour AM/PM time format string to a 24-hour military time format string. The timeConversion function parses the input string, adjusts the hour according to AM or PM, and returns the converted time.

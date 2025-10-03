@@ -1,0 +1,28 @@
+┌────────────────────────────┐
+│        Start Program       │
+└───────────────┬────────────┘
+                │
+┌───────────────┴────────────┐
+│ Read list arr of 5 integers│
+└───────────────┬────────────┘
+                │
+┌───────────────┴──────────────┐
+│ Calculate totalSum = sum(arr)│
+│ Find minVal = min(arr)       │
+│ Find maxVal = max(arr)       │
+└───────────────┬──────────────┘
+                │
+┌───────────────┴─────────────┐
+│ minSum = totalSum - maxVal  │
+│ maxSum = totalSum - minVal  │
+└───────────────┬─────────────┘
+                │
+┌───────────────┴─────────────┐
+│ Print minSum and maxSum     │
+└───────────────┬─────────────┘
+                │
+┌───────────────┴────────────┐
+│         End Program        │
+└────────────────────────────┘
+
+This program calculates the minimum and maximum sums of exactly four out of five integers in the list. The miniMaxSum function sums all elements, then subtracts the maximum element to get the minimum sum, and subtracts the minimum element to get the maximum sum, then prints both sums.

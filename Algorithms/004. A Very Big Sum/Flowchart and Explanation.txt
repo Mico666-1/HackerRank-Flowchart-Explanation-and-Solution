@@ -1,0 +1,26 @@
+┌───────────────────────────┐
+│       Start Program       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│    Read arCount (int)     │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Read list of longs ar     │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Call aVeryBigSum(ar)      │
+│    (sum all elements)     │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│   Write result to output  │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│        End Program        │
+└───────────────────────────┘
+
+This program reads a list of long integers and returns their sum using the aVeryBigSum function, which handles very large sums that might exceed normal integer limits.

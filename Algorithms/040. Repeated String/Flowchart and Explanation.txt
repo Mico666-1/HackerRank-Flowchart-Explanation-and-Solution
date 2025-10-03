@@ -1,0 +1,30 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Count 'a'   │
+│ in s        │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Compute full│
+│ repeats     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Compute     │
+│ remainder   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Total 'a's  │
+│ = full*A +  │
+│ remainder A │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return total│
+└─────────────┘
+
+The repeatedString function calculates how many times the letter 'a' appears in the first n characters of an infinitely repeated string s. It first counts 'a's in the original string, multiplies by the number of complete repetitions that fit into n, then adds the 'a's from the leftover substring. This method avoids creating large strings and efficiently handles very large n.

@@ -1,0 +1,33 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│  Read list  │
+│  of numbers │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Count freq  │
+│ of elements │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ For each key│
+│ check key+1 │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Update max  │
+│ subsequence │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print result│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program finds the longest subsequence where the absolute difference between any two elements is at most 1. It counts the frequency of each number, then checks combinations of each number with its consecutive number (num and num+1). The maximum length among these pairs is returned as the result.

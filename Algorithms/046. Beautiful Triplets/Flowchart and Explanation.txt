@@ -1,0 +1,38 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ count = 0   │
+└──────┬──────┘
+       │
+┌──────┴───────────┐
+│ For i = 0 to n-3 │
+└──────┬───────────┘
+       │
+┌──────┴─────────────┐
+│ For j = i+1 to n-2 │
+└──────┬─────────────┘
+       │
+┌──────┴──────────────┐
+│ If arr[j]-arr[i]==d │
+└──────┬──────────────┘
+       │
+┌──────┴─────────────┐
+│ For k = j+1 to n-1 │
+└──────┬─────────────┘
+       │
+┌──────┴──────────────┐
+│ If arr[k]-arr[j]==d │
+└──────┬──────────────┘
+       │
+┌──────┴──────┐
+│ count++     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ After loops │
+│ return count│
+└─────────────┘
+
+The beautifulTriplets function counts the number of triplets (i, j, k) in the array such that the differences between consecutive elements equal d. It uses three nested loops to check every combination of indices in order. Whenever a valid triplet is found, the counter is incremented. Finally, the function returns the total count of beautiful triplets.

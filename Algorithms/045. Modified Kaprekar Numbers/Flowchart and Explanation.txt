@@ -1,0 +1,42 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ found = false│
+└──────┬───────┘
+       │
+┌──────┴───────┐
+│ For n = p to │
+│ q            │
+└──────┬───────┘
+       │
+┌──────┴──────────────┐
+│ sq = n*n            │
+│ str = sq.ToString() │
+└──────┬──────────────┘
+       │
+┌──────┴───────────────────────────────┐
+│ left = str.Substring(0,str.Length/2) │
+│ right = str.Substring(str.Length/2)  │
+└──────┬───────────────────────────────┘
+       │
+┌──────┴──────────────┐
+│ l = int.Parse(left) │
+│ r = int.Parse(right)│
+└──────┬──────────────┘
+       │
+┌──────┴──────┐
+│ If l+r == n │
+│ then        │
+│ print n     │
+│ found=true  │
+└──────┬──────┘
+       │
+┌──────┴──────────────┐
+│ After loop          │
+│ If found==false     │
+│ print INVALID RANGE │
+└─────────────────────┘
+
+The kaprekarNumbers function checks each number in the range [p, q] to see if it’s a Kaprekar number. It squares the number, splits the square into left and right halves, converts them to integers, and sums them. If the sum equals the original number, it prints the number. If no Kaprekar numbers are found, it prints "INVALID RANGE".

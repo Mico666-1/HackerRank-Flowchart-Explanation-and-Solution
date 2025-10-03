@@ -1,0 +1,39 @@
+┌──────────────────────────────┐
+│         Start Program        │
+└──────────────┬───────────────┘
+               │
+┌──────────────┴────────────────┐
+│      Read integer n           │
+└──────────────┬────────────────┘
+               │
+┌──────────────┴───────────────┐
+│ Read n rows of integers into │
+│       2D list arr            │
+└──────────────┬───────────────┘
+               │
+┌──────────────┴───────────────┐
+│ Initialize primarySum=0      │
+│ Initialize secondarySum=0    │
+└──────────────┬───────────────┘
+               │
+┌──────────────┴─────────────────────┐
+│ For i from 0 to n-1:               │
+│  Add arr[i][i] to primarySum       │
+│  Add arr[i][n-1-i] to secondarySum │
+└──────────────┬─────────────────────┘
+               │
+┌──────────────┴───────────────┐
+│ Compute absolute difference  │
+│   between primarySum and     │
+│   secondarySum               │
+└──────────────┬───────────────┘
+               │
+┌──────────────┴───────────────┐
+│ Write result to output       │
+└──────────────┬───────────────┘
+               │
+┌──────────────┴───────────────┐
+│         End Program          │
+└──────────────────────────────┘
+
+This program calculates the absolute difference between the sums of the two diagonals in a square matrix. The diagonalDifference function sums the primary diagonal and the secondary diagonal elements, then returns their absolute difference.

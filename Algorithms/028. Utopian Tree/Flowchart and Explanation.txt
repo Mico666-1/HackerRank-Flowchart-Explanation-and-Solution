@@ -1,0 +1,27 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read cycles │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Init height │
+│     = 1     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Apply growth│
+│ for n cycles│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print height│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The tree starts with a height of 1 meter. For each growth cycle, if it is spring (even index), the height doubles, and if it is summer (odd index), the height increases by 1. After completing all n cycles, the final height is returned.

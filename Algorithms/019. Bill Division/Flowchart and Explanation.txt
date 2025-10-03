@@ -1,0 +1,26 @@
+┌───────────────┐
+│    Start      │
+└──────┬────────┘
+       │
+┌──────┴────────┐
+│ Calculate sum │
+└──────┬────────┘
+       │
+┌──────┴───────────────┐
+│ Compute actual share │
+└──────┬───────────────┘
+       │
+┌──────┴───────────────┐
+│ Is b = actual share? │
+└──────┬───────┬───────┘
+       │       │
+ ┌─────┴─┐ ┌───┴───────────┐
+ │ Print │ │ Print (b-     │
+ │ "Bon  │ │ actual share) │
+ │Appetit│ └──────┬────────┘
+ └───────┘        │
+       ┌──────────┴───────────┐
+       │         End          │
+       └──────────────────────┘
+
+The program calculates the fair share of the bill for Anna by excluding the item she didn’t eat and dividing the rest equally. It then compares Anna’s actual contribution b with the fair share. If both values match, it prints "Bon Appetit", otherwise it prints the overcharged amount.

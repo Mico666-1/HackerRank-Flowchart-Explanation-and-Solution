@@ -1,0 +1,24 @@
+┌───────────────────────────┐
+│           Start           │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│        count = 0          │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ Loop i = 0 to n-2         │
+│   Loop j = i+1 to n-1     │
+│     If (ar[i]+ar[j])%k=0  │
+│        count++            │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│       Return count        │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│            End            │
+└───────────────────────────┘
+
+The function divisibleSumPairs finds all pairs (i, j) where i < j and (ar[i] + ar[j]) % k == 0. It uses two nested loops: the first loop selects an element, and the second loop checks all elements that come after it. Each time a pair’s sum is divisible by k, a counter is incremented. After checking all pairs, the function returns the total count of valid pairs.

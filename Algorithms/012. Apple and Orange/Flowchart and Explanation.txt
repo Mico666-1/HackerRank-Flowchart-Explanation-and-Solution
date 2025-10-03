@@ -1,0 +1,58 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Initialize appleCount = 0   │
+│ Initialize orangeCount = 0  │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ For each apple in apples    │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ landingPosition = a + apple │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Is landingPosition >= s AND │
+│ landingPosition <= t?       │
+└───────┬───────────┬─────────┘
+       Yes          No
+        │           │
+┌───────┴───────┐   │
+│ appleCount++  │   │
+└───────────────┘   │
+                    │
+              ┌─────┴──────────────────────┐
+              │ For each orange in oranges │
+              └─────────────┬──────────────┘
+                            │
+              ┌─────────────┴────────────────┐
+              │ landingPosition = b + orange │
+              └─────────────┬────────────────┘
+                            │
+              ┌─────────────┴───────────────┐
+              │ Is landingPosition >= s AND │
+              │ landingPosition <= t?       │
+              └───────┬───────────┬─────────┘
+                     Yes          No
+                      │           │
+              ┌───────┴───────┐   │
+              │ orangeCount++ │   │
+              └───────────────┘   │
+                                  │
+                    ┌─────────────┴───────────────┐
+                    │ Print appleCount            │
+                    └─────────────┬───────────────┘
+                                  │
+                    ┌─────────────┴───────────────┐
+                    │ Print orangeCount           │
+                    └─────────────┬───────────────┘
+                                  │
+                    ┌─────────────┴───────────────┐
+                    │             End             │
+                    └─────────────────────────────┘
+
+The function calculates where each apple and orange lands by adding its distance to the position of its respective tree. It then counts how many apples and oranges fall within the house range [s, t]. Finally, it prints the counts for apples and oranges. This approach ensures that each fruit’s landing position is correctly assessed against the house boundaries.

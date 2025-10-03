@@ -1,0 +1,44 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read n and p│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Initialize  │
+│ result list │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ For x = 1..n│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ firstIndex =│
+│ position of │
+│ x in p      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ secondIndex=│
+│ position of │
+│ firstIndex  │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Add second  │
+│ Index to    │
+│ result list │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print result│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program computes y for each x such that p[p[y]] = x. It iterates through numbers 1 to n, finds the index of x in the array p (firstIndex), then finds the index of firstIndex (secondIndex), and stores this in the result list. This double lookup efficiently solves the permutation equation without complex calculations, producing the correct sequence for all elements.

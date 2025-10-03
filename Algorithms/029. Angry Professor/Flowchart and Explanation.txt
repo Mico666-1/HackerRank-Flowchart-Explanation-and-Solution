@@ -1,0 +1,27 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read inputs │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Count onTime│
+│ students    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Compare with│
+│ threshold k │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print result│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program counts how many students arrive on time (arrival time ≤ 0). If this number is greater than or equal to the required threshold k, the class continues (NO), otherwise the class is cancelled (YES).

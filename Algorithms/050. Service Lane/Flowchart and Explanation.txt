@@ -1,0 +1,45 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ result = [] │
+└──────┬──────┘
+       │
+┌──────┴─────────────────┐
+│ For each case in cases │
+└──────┬─────────────────┘
+       │
+┌──────┴──────────┐
+│ start = case[0] │
+└──────┬──────────┘
+       │
+┌──────┴────────┐
+│ end = case[1] │
+└──────┬────────┘
+       │
+┌──────┴─────────┐
+│ minWidth = MAX │
+└──────┬─────────┘
+       │
+┌──────┴───────────────┐
+│ For i = start to end │
+└──────┬───────────────┘
+       │
+┌──────┴─────────────────────────────┐
+│ minWidth = min(minWidth, width[i]) │
+└──────┬─────────────────────────────┘
+       │
+┌──────┴─────────────────┐
+│ Add minWidth to result │
+└──────┬─────────────────┘
+       │
+┌──────┴────────────┐
+│ End For each case │
+└──────┬────────────┘
+       │
+┌──────┴────────┐
+│ return result │
+└───────────────┘
+
+The serviceLane function computes the maximum vehicle size that can pass through each segment of the service lane. For each test case, it iterates from the start to the end index of the segment, keeping track of the minimum width encountered. This ensures the largest vehicle that can fit safely is determined. The results are collected into a list and returned.

@@ -1,0 +1,41 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Initialize  │
+│ result list │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ While arr   │
+│ not empty   │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Add arr.Count│
+│ to result    │
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ Find minimum│
+│ value       │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Subtract    │
+│ min from    │
+│ each stick  │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Remove zeros│
+│ from arr    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return      │
+│ result      │
+└─────────────┘
+
+The cutTheSticks function repeatedly reduces all stick lengths by the smallest stick in the array. After each reduction, it counts the remaining sticks and removes any that reach zero. This process continues until no sticks are left, and the function returns a list of counts representing how many sticks are present before each cut. It efficiently tracks the sticks using a while loop, Min(), and filtering for positive lengths.

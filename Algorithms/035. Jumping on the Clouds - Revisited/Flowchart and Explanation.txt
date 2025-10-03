@@ -1,0 +1,34 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Initialize  │
+│ energy =100 │
+│ position =0 │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Do           │
+│ position =   │
+│ (pos+k)%n    │
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│ energy -=1+2│
+│ *c[position]│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ While pos ≠0│
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Return energy│
+└──────┬───────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program simulates a player jumping in a circular cloud array with jump size k. The player starts with 100 energy points, loses 1 for each jump, and an additional 2 points if landing on a thundercloud (c[i] == 1). Using modulo ensures circular traversal. The loop continues until the player returns to the starting position. The remaining energy is returned as the result.

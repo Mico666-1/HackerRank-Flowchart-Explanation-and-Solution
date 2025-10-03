@@ -1,0 +1,27 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴───────┐
+│ Calculate    │
+│ start =      │
+│ ceil(sqrt(a))│
+└──────┬───────┘
+       │
+┌──────┴────────┐
+│ Calculate     │
+│ end =         │
+│ floor(sqrt(b))│
+└──────┬────────┘
+       │
+┌──────┴──────┐
+│ Return max  │
+│ 0, end-start│
+│ +1          │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The function counts all perfect squares between a and b by computing the smallest integer whose square is ≥ a and the largest integer whose square is ≤ b. The number of perfect squares is the difference of these two integers plus one. This approach avoids iterating through each number, ensuring an efficient solution.

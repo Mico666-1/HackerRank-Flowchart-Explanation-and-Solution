@@ -1,0 +1,37 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴─────────────┐
+│ chocolates = n / c │
+└──────┬─────────────┘
+       │
+┌──────┴────────────────┐
+│ wrappers = chocolates │
+└──────┬────────────────┘
+       │
+┌──────┴──────────────┐
+│ While wrappers >= m │
+└──────┬──────────────┘
+       │
+┌──────┴───────────────┐
+│ extra = wrappers / m │
+└──────┬───────────────┘
+       │
+┌──────┴──────────────┐
+│ chocolates += extra │
+└──────┬──────────────┘
+       │
+┌──────┴──────────────────────────┐
+│ wrappers = wrappers % m + extra │
+└──────┬──────────────────────────┘
+       │
+┌──────┴──────┐
+│ End While   │
+└──────┬──────┘
+       │
+┌──────┴────────────┐
+│ return chocolates │
+└───────────────────┘
+
+The chocolateFeast function calculates the total chocolates that can be eaten given initial money n, chocolate cost c, and wrapper exchange rate m. First, it buys as many chocolates as possible, then repeatedly exchanges wrappers for extra chocolates. After each exchange, wrappers are updated with the remaining wrappers plus the new chocolates’ wrappers. The process continues until the wrappers are fewer than m. The function returns the total chocolates eaten.

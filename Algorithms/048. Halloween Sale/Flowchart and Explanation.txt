@@ -1,0 +1,33 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ count = 0   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ While s >= p│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ s = s - p   │
+└──────┬──────┘
+       │
+┌──────┴────────────┐
+│ count = count + 1 │
+└──────┬────────────┘
+       │
+┌──────┴──────────┐
+│ p = max(p-d, m) │
+└──────┬──────────┘
+       │
+┌──────┴──────┐
+│ End While   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ return count│
+└─────────────┘
+
+The howManyGames function calculates how many games can be bought with a given budget s. Starting with price p, it repeatedly deducts the current price from the budget and increments a counter. After each purchase, the game price decreases by d but never goes below m. The process continues until the remaining budget is less than the current game price, and the function returns the total number of games bought.

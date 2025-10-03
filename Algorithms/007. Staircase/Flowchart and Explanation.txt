@@ -1,0 +1,19 @@
+┌───────────────────────────┐
+│       Start Program       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│      Read integer n       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│ For i from 1 to n:        │
+│  Print (n - i) spaces     │
+│  Print i hashes (#)       │
+└─────────────┬─────────────┘
+              │
+┌─────────────┴─────────────┐
+│       End Program         │
+└───────────────────────────┘
+
+The program prints a right-aligned staircase of height n using the # character. The staircase function prints lines with increasing numbers of # characters, preceded by spaces to align them to the right.

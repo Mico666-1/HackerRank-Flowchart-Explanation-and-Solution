@@ -1,0 +1,33 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Read n, k   │
+│ and heights │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Find max    │
+│ hurdle      │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Compare with│
+│ jump height │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Calc doses  │
+│ if needed   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Print result│
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│    End      │
+└─────────────┘
+
+The program determines the number of doses needed for the character to jump the tallest hurdle. It finds the maximum hurdle height from the list and compares it with the character’s jump capacity k. If the maximum hurdle is higher than k, the difference is the number of doses required; otherwise, no dose is needed.

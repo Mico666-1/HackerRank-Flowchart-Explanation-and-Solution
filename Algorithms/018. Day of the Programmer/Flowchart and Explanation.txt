@@ -1,0 +1,33 @@
+┌─────────────┐
+│    Start    │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Input year  │
+└──────┬──────┘
+       │
+┌──────┴──────────────┐
+│  year = 1918 ?      │
+└──────┬──────────────┘
+       │
+┌──────┴──────────────┐
+│ return 26.09.1918   │
+└──────┬──────────────┘
+       │
+┌──────┴──────────────┐
+│   leap year ?       │
+└──────┬──────────────┘
+       │
+┌──────┴──────────────┐
+│ return 12.09.year   │
+└──────┬──────────────┘
+       │
+┌──────┴──────────────┐
+│ return 13.09.year   │
+└──────┬──────────────┘
+       │
+┌──────┴──────┐
+│     End     │
+└─────────────┘
+
+The Day of the Programmer problem determines the exact date of the 256th day of a given year, considering Russia’s transition from the Julian to the Gregorian calendar. For years before 1918, the Julian calendar is used, where leap years occur if the year is divisible by 4. For years after 1918, the Gregorian calendar applies, where leap years follow the rule of divisibility by 400 or divisibility by 4 but not 100. The year 1918 is a special case, as Russia switched calendars and skipped days in February, making the 256th day fall on 26.09.1918. For all other years, if it’s a leap year, the date is 12.09.year, otherwise 13.09.year. This ensures the function correctly outputs the unique 256th day for any given year.

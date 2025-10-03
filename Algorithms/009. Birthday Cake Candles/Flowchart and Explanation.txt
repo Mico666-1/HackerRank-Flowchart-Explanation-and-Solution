@@ -1,0 +1,29 @@
+┌──────────────────────────────┐
+│         Start Program        │
+└───────────────┬──────────────┘
+                │
+┌───────────────┴──────────────┐
+│   Read integer candlesCount  │
+└───────────────┬──────────────┘
+                │
+┌───────────────┴───────────────┐
+│   Read list of candles heights│
+└───────────────┬───────────────┘
+                │
+┌───────────────┴────────────────┐
+│   Find maxHeight = max(candles)│
+└───────────────┬────────────────┘
+                │
+┌───────────────┴────────────────────────┐
+│ Count candles with height == maxHeight │
+└───────────────┬────────────────────────┘
+                │
+┌───────────────┴──────────────┐
+│       Print the count        │
+└───────────────┬──────────────┘
+                │
+┌───────────────┴──────────────┐
+│          End Program         │
+└──────────────────────────────┘
+
+The program finds the number of tallest candles on a birthday cake. The birthdayCakeCandles function determines the maximum height and counts how many candles have that height.

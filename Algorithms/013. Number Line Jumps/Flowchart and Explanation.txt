@@ -1,0 +1,41 @@
+┌─────────────────────────────┐
+│           Start             │
+└─────────────┬───────────────┘
+              │
+┌─────────────┴───────────────┐
+│ Are v1 and v2 equal?        │
+└───────┬───────────┬─────────┘
+       Yes          No
+        │           │
+┌───────┴───────┐   │
+│ Are x1 and x2 │   │
+│ equal?        │   │
+└───┬────────┬──┘   │
+   Yes       No     │
+    │        │      │
+┌───┴─────┐  │      │
+│ Return  │  │      │
+│ "YES"   │  │      │
+└─────────┘  │      │
+             │      │
+┌────────────┴──────┴───────────┐
+│ difference = x2 - x1          │
+│ speedDifference = v1 - v2     │
+└───────────────┬───────────────┘
+                │
+┌───────────────┴───────────────┐
+│ Is difference divisible by    │
+│ speedDifference AND difference│
+│ / speedDifference > 0?        │
+└───────┬───────────┬───────────┘
+       Yes          No
+        │           │
+┌───────┴───────┐   │
+│ Return "YES"  │   │
+└───────────────┘   │
+                    │
+              ┌─────┴──────────────┐
+              │ Return "NO"        │
+              └────────────────────┘
+
+The kangaroo problem checks whether two kangaroos starting at positions x1 and x2 with velocities v1 and v2 will land on the same position after the same number of jumps. If their velocities are equal, they meet only if they start at the same position. Otherwise, we compute the difference in starting positions and velocities; if the difference is divisible evenly by the velocity difference and the quotient is positive, they will meet after that many jumps. If not, they will never meet.

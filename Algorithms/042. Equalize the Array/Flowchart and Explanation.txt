@@ -1,0 +1,41 @@
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Initialize  │
+│ freq={}     │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ For each    │
+│ num in arr  │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ If num in   │
+│ freq        │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Increment   │
+│ freq[num]   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Else set    │
+│ freq[num]=1 │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ maxFreq =   │
+│ Max(freq)   │
+└──────┬──────┘
+       │
+┌──────┴──────┐
+│ Return      │
+│ arr.Count-  │
+│ maxFreq     │
+└─────────────┘
+
+The equalizeArray function finds the minimum number of deletions needed to make all array elements equal. It first counts the frequency of each number using a dictionary, then identifies the most frequent number. The minimum deletions equal the total array size minus the frequency of this number, ensuring that all remaining elements are identical.
