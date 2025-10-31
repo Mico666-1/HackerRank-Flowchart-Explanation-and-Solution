@@ -1,0 +1,30 @@
+Start
+|
+v
+Read n and c (coin set)
+|
+v
+Initialize dp[0] = 1 and dp[] size = n + 1
+|
+v
+For each coin in c
+|
+v
+For i = coin to n
+|
+v
+dp[i] = dp[i] + dp[i - coin]
+|
+v
+End inner loop
+|
+v
+End outer loop
+|
+v
+Output dp[n]
+|
+v
+End
+
+The getWays function calculates the total number of ways to make change for an amount n using the coins in list c. It uses dynamic programming where dp[i] stores the number of ways to form amount i. Starting with dp[0] = 1, it iterates through each coin and updates all amounts greater than or equal to that coin’s value by adding dp[i - coin] to dp[i]. The final result dp[n] gives the total number of combinations possible.

@@ -1,0 +1,43 @@
+Start
+ |
+ v
+Read n and k
+ |
+ v
+If k == 0
+ |
+ v
+Output sequence 1 to n
+ |
+ v
+Else if n % (2*k) != 0
+ |
+ v
+Output -1
+ |
+ v
+Else
+ |
+ v
+Initialize addK = true
+ |
+ v
+For i = 1 to n
+ |
+ v
+If addK → result = i + k
+Else → result = i - k
+ |
+ v
+If i % k == 0 → toggle addK
+ |
+ v
+Repeat until i = n
+ |
+ v
+Output permutation
+ |
+ v
+End
+
+The algorithm constructs a permutation where the absolute difference between each element’s value and its position equals k. If impossible, it returns -1. When valid, it alternates adding and subtracting k in blocks of size k to ensure a consistent pattern.

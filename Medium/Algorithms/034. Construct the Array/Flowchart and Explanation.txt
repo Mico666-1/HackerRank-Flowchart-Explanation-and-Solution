@@ -1,0 +1,33 @@
+Start
+|
+v
+Read n, k, x
+|
+v
+Initialize same = 0, diff = 1
+|
+v
+For i = 2 to n - 1
+|
+v
+newSame = diff % mod
+|
+v
+newDiff = (same * (k - 1) + diff * (k - 2)) % mod
+|
+v
+Update same = newSame, diff = newDiff
+|
+v
+End loop
+|
+v
+If x == 1 then output same % mod
+|
+v
+Else output diff % mod
+|
+v
+End
+
+The countArray function computes the number of valid arrays of length n using integers from 1 to k where the first element is 1 and the last is x, ensuring no adjacent elements are equal. It uses dynamic programming with two states: same (arrays ending in 1) and diff (arrays ending in a value not equal to 1). These states are updated for each position, and the final result is chosen based on whether the last value x equals 1 or not.

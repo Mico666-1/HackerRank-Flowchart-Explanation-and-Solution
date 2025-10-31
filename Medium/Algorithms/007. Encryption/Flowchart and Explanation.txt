@@ -1,0 +1,42 @@
+Start
+ |
+ v
+Read input string s
+ |
+ v
+Remove spaces from s
+ |
+ v
+Compute length of s
+ |
+ v
+Compute sqrtLen = √length
+ |
+ v
+Set rows = floor(sqrtLen)
+ |
+ v
+Set cols = ceil(sqrtLen)
+ |
+ v
+If rows * cols < length then increase rows by 1
+ |
+ v
+For i = 0 to cols - 1
+ |
+ v
+For j = i to length - 1, step by cols
+ |
+ v
+Append s[j] to result
+ |
+ v
+After each column, append a space
+ |
+ v
+Output encrypted string
+ |
+ v
+End
+
+The algorithm removes all spaces from the input, then arranges the characters in a grid where the number of rows and columns is determined by the square root of the string length. The encrypted message is formed by reading characters column by column and separating each column’s content with spaces.

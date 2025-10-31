@@ -1,0 +1,33 @@
+Start
+ |
+ v
+Read 3x3 matrix input
+ |
+ v
+Initialize minCost = ∞
+ |
+ v
+For each of 8 magic squares
+ |
+ v
+Set cost = 0
+ |
+ v
+For each cell (i, j)
+ |
+ v
+cost += |s[i][j] - magic[i][j]|
+ |
+ v
+If cost < minCost, update minCost
+ |
+ v
+After all squares checked
+ |
+ v
+Print minCost
+ |
+ v
+End
+
+A 3×3 magic square contains all numbers 1–9 exactly once, with each row, column, and diagonal summing to 15. There are only eight valid 3×3 magic square patterns. The function compares the input matrix to each pattern and computes the cost (the sum of absolute differences between corresponding cells). The smallest of these total costs is the minimum number of changes required to turn the given square into a magic square.

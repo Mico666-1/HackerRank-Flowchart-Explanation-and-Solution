@@ -1,0 +1,30 @@
+Start
+ |
+ v
+Read n and price list
+ |
+ v
+Store prices with their indices
+ |
+ v
+Sort prices in ascending order
+ |
+ v
+For each consecutive pair (lower, higher)
+ |
+ v
+If higher was bought before lower
+ |
+ v
+Compute loss = higher - lower
+ |
+ v
+Update minimum loss if smaller
+ |
+ v
+Output minimum loss
+ |
+ v
+End
+
+The program finds the smallest possible loss when selling a house at a lower price after buying it earlier. It maps prices to their indices, sorts the prices, and checks pairs to ensure the buy date comes before the sell date while minimizing the difference.

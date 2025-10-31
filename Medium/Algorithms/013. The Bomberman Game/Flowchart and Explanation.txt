@@ -1,0 +1,27 @@
+Start
+ |
+ v
+Read n and grid
+ |
+ v
+If n == 1 → Return grid
+ |
+ v
+If n % 2 == 0 → Fill grid with 'O' and return
+ |
+ v
+Compute explosion1 = Explode(grid)
+ |
+ v
+If (n - 3) % 4 == 0 → Return explosion1
+ |
+ v
+Else → Compute explosion2 = Explode(explosion1)
+ |
+ v
+Return explosion2
+ |
+ v
+End
+
+The program simulates Bomberman’s grid after n seconds. If n is even, the grid is filled with bombs. If n is odd, the grid alternates between explosions at 3-second intervals, following a repeating 4-second cycle to determine which explosion pattern to output.

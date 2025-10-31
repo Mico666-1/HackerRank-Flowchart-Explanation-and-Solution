@@ -1,0 +1,37 @@
+Start
+|
+v
+Read array B
+|
+v
+Set low = 0, high = 0
+|
+v
+For i = 1 to n - 1
+|
+v
+Calculate:
+lowToLow = |1 - 1|
+lowToHigh = |B[i] - 1|
+highToLow = |1 - B[i - 1]|
+highToHigh = |B[i] - B[i - 1]|
+|
+v
+newLow = max(low + lowToLow, high + highToLow)
+|
+v
+newHigh = max(low + lowToHigh, high + highToHigh)
+|
+v
+Update low = newLow, high = newHigh
+|
+v
+End loop
+|
+v
+Output max(low, high)
+|
+v
+End
+
+The cost function finds the maximum possible sum of absolute differences between adjacent elements after each can be changed to 1 or remain as is. It uses dynamic programming to track two states at each step: low for when the current element is 1, and high for when it’s B[i]. By iteratively updating these states, the algorithm ensures the maximum difference sum is found efficiently.

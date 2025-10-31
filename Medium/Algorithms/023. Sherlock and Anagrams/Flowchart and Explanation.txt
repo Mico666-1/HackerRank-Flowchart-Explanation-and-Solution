@@ -1,0 +1,29 @@
+Start
+ |
+ v
+Read string s
+ |
+ v
+Initialize dictionary and count = 0
+ |
+ v
+For each substring of s:
+ |
+ v
+Sort characters in substring
+ |
+ v
+If sorted substring exists in dictionary:
+ |
+ v
+Increment count by existing frequency
+ |
+ v
+Update dictionary count
+ |
+ v
+Return total count
+ |
+ v
+End
+

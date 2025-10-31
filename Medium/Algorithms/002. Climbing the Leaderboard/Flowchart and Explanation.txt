@@ -1,0 +1,34 @@
+Start
+ |
+ v
+Read ranked and player scores
+ |
+ v
+Remove duplicates from ranked
+ |
+ v
+Sort ranked in descending order
+ |
+ v
+Set index = last position
+ |
+ v
+For each score in player
+ |
+ v
+While score >= ranked[index]
+ move index up
+ |
+ v
+Add (index + 2) to result
+ |
+ v
+After all scores processed
+ |
+ v
+Print result
+ |
+ v
+End
+
+The program calculates each player’s rank in a leaderboard. It first removes duplicate scores from the ranked list and sorts it in descending order. Then, for each player’s score, it compares the score against the ranked list from the lowest rank upwards. If the player’s score is higher or equal to a ranked score, the pointer moves up the list. Once the correct position is found, the rank (index + 2) is added to the results. This efficient backward traversal ensures optimal performance even with large input sizes.

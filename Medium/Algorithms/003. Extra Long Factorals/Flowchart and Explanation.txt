@@ -1,0 +1,24 @@
+Start
+ |
+ v
+Read integer n
+ |
+ v
+Set result = 1
+ |
+ v
+For i = 2 to n
+ |
+ v
+result = result * i
+ |
+ v
+End loop
+ |
+ v
+Print result
+ |
+ v
+End
+
+The program calculates the factorial of a large number n. Since factorial values grow extremely fast, normal integer types cannot hold such large results. To handle this, the program uses C#’s BigInteger type from the System.Numerics namespace, which supports arbitrary large integers. The algorithm multiplies all integers from 2 up to n and then prints the final product as the factorial result.

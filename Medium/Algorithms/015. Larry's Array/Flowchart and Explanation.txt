@@ -1,0 +1,33 @@
+Start
+ |
+ v
+Read test cases
+ |
+ v
+For each test case
+ |
+ v
+Read array A
+ |
+ v
+Set inversions = 0
+ |
+ v
+For each pair (i, j) in A
+ |
+ v
+If A[i] > A[j] → increment inversions
+ |
+ v
+After all pairs checked
+ |
+ v
+If inversions % 2 == 0 → Print "YES"
+ |
+ v
+Else → Print "NO"
+ |
+ v
+End
+
+The program counts how many pairs of elements are inverted (A[i] > A[j]). Since each allowed rotation changes the inversion count by an even number, if the total inversions are even, the array can be sorted and prints “YES”; otherwise, it prints “NO.”

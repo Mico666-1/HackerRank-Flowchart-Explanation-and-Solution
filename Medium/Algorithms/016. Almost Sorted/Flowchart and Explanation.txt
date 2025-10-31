@@ -1,0 +1,30 @@
+Start
+ |
+ v
+Read array arr
+ |
+ v
+Create sorted copy of arr
+ |
+ v
+Find indices where arr[i] != sorted[i]
+ |
+ v
+If no differences → Print "yes"
+ |
+ v
+Else if two differences → Print "yes" and swap indices
+ |
+ v
+Else reverse subarray between first and last difference
+ |
+ v
+If reversed array equals sorted → Print "yes" and reverse indices
+ |
+ v
+Else → Print "no"
+ |
+ v
+End
+
+The algorithm checks whether the array can be sorted by a single swap or reverse operation. It compares the array with its sorted version, identifies mismatched positions, and verifies if performing one of these operations results in a sorted array.

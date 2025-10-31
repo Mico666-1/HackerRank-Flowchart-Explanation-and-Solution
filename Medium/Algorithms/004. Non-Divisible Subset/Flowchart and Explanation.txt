@@ -1,0 +1,41 @@
+Start
+ |
+ v
+Read k and list s
+ |
+ v
+Initialize array remainderCounts[k] = 0
+ |
+ v
+For each number in s
+ |
+ v
+Increment remainderCounts[num % k]
+ |
+ v
+Set count = min(remainderCounts[0], 1)
+ |
+ v
+For i = 1 to k/2
+ |
+ v
+If i != k - i
+ take max of remainderCounts[i] and remainderCounts[k - i]
+ add to count
+ |
+ v
+If k is even, add 1 to count
+ |
+ v
+Print count
+ |
+ v
+End
+
+The problem asks for the size of the largest subset where the sum of any two numbers is not divisible by k.
+The approach uses modular arithmetic: numbers with the same remainder modulo k cannot coexist with their complementary remainders (those that add up to k).
+The program counts how many numbers have each remainder and, for every pair (i, k−i), only the more frequent remainder group is included.
+Special cases handled:
+
+    * Only one number with remainder 0 can be chosen.
+    * If k is even, only one number with remainder k/2 can be chosen.

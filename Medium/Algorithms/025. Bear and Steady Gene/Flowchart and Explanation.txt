@@ -1,0 +1,42 @@
+Start
+ |
+ v
+Read integer n and string gene
+ |
+ v
+Set required = n / 4
+ |
+ v
+Count occurrences of A, C, G, T
+ |
+ v
+If all counts == required
+ |
+ v
+Return 0
+ |
+ v
+Set minLength = n, left = 0
+ |
+ v
+For right from 0 to n-1
+ |
+ v
+Decrease count[gene[right]]
+ |
+ v
+While counts of all <= required
+ |
+ v
+minLength = min(minLength, right - left + 1)
+ |
+ v
+Increase count[gene[left]] and left++
+ |
+ v
+Return minLength
+ |
+ v
+End
+
+The algorithm finds the smallest substring that can be replaced to make the gene steady, meaning each character (A, C, G, T) appears exactly n/4 times. It uses a sliding window to minimize the length of the substring while ensuring balance outside the window.

@@ -1,0 +1,45 @@
+Start
+ |
+ v
+Read number of test cases t
+ |
+ v
+For each test case
+ |
+ v
+Read grid dimensions R, C
+ |
+ v
+Read grid G
+ |
+ v
+Read pattern dimensions r, c
+ |
+ v
+Read pattern P
+ |
+ v
+For i = 0 to R - r
+ |
+ v
+For j = 0 to C - c
+ |
+ v
+Set found = true
+ |
+ v
+For x = 0 to r - 1
+ |
+ v
+If G[i + x][j..j + c] != P[x], set found = false and break
+ |
+ v
+If found == true, return "YES"
+ |
+ v
+After all loops, return "NO"
+ |
+ v
+End
+
+The algorithm checks if a smaller pattern grid P exists inside a larger grid G by sliding the pattern over every possible position in G and comparing substrings row by row. If all rows match consecutively, it outputs “YES”; otherwise, after all checks, it returns “NO.”

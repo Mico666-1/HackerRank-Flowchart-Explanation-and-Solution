@@ -1,0 +1,27 @@
+Start
+ |
+ v
+Read strings s1 and s2
+ |
+ v
+Initialize dp table of size (n+1) x (n+1)
+ |
+ v
+For i from 1 to n:
+ |
+ v
+  For j from 1 to n:
+   |
+   v
+   If s1[i-1] == s2[j-1]:
+       dp[i,j] = dp[i-1,j-1] + 1
+   Else:
+       dp[i,j] = max(dp[i-1,j], dp[i,j-1])
+ |
+ v
+Return dp[n,n]
+ |
+ v
+End
+
+The algorithm uses dynamic programming to find the longest common subsequence (LCS) between s1 and s2. Each cell in the DP table represents the length of the longest subsequence up to those indices, and the final cell gives the maximum possible length of the common child.

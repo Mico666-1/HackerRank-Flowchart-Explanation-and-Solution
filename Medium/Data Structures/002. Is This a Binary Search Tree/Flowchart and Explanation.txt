@@ -1,0 +1,32 @@
+START
+|
+v
+Call checkBST(root)
+|
+v
+→ isBST(node, min, max)
+|
+v
+Is node NULL?
+|--Yes--> return TRUE
+|
+v
+Is node.data <= min OR node.data >= max?
+|--Yes--> return FALSE
+|
+v
+Recursively check left subtree (min, node.data)
+|
+v
+Recursively check right subtree (node.data, max)
+|
+v
+Return TRUE if both subtrees valid
+|
+v
+Print "Yes" if true else "No"
+|
+v
+END
+
+The function verifies if a binary tree is a valid Binary Search Tree (BST). It recursively ensures every node’s value lies within a valid range (min < node.data < max). The range updates as it traverses left (max becomes node.data) and right (min becomes node.data). If all nodes satisfy these constraints, the tree is a BST.

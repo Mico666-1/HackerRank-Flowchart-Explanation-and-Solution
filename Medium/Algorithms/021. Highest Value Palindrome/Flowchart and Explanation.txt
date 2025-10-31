@@ -1,0 +1,24 @@
+Start
+ |
+ v
+Read string s, integers n, k
+ |
+ v
+Convert s to character array
+ |
+ v
+Make string palindrome by matching left and right
+ |
+ v
+If k < 0 → print "-1" → End
+ |
+ v
+Use remaining k to change digits to '9' for max value
+ |
+ v
+Return final palindrome string
+ |
+ v
+End
+
+The algorithm first converts the string into a palindrome using minimal changes, tracking which digits were modified. Then, if there are remaining allowed changes (k), it maximizes the palindrome by turning digits into '9' where possible. If not enough changes are available, it returns -1.
