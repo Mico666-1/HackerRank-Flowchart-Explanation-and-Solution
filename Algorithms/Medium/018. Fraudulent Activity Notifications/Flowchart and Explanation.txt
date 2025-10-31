@@ -1,0 +1,36 @@
+Start
+ |
+ v
+Read n and d
+ |
+ v
+Read expenditure list
+ |
+ v
+Initialize count[201] and notifications = 0
+ |
+ v
+Fill count for first d days
+ |
+ v
+For i = d to n - 1
+ |
+ v
+Compute median from count[]
+ |
+ v
+If expenditure[i] >= 2 * median → notifications++
+ |
+ v
+Update count[] by removing old and adding new value
+ |
+ v
+End For
+ |
+ v
+Print notifications
+ |
+ v
+End
+
+The program tracks spending patterns using a counting sort approach. For each day after the first d days, it calculates the median of the previous d expenditures. If today's spending is at least twice that median, it counts as a notification. The counting array efficiently maintains frequency data without sorting.

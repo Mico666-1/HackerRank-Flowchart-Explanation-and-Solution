@@ -1,0 +1,59 @@
+Start
+ |
+ v
+Read hour h and minutes m
+ |
+ v
+If m == 0
+ |
+ v
+Output "<hour> o' clock"
+ |
+ v
+Else if m == 15
+ |
+ v
+Output "quarter past <hour>"
+ |
+ v
+Else if m == 30
+ |
+ v
+Output "half past <hour>"
+ |
+ v
+Else if m == 45
+ |
+ v
+Output "quarter to <hour + 1>"
+ |
+ v
+Else if m < 30
+ |
+ v
+If m == 1 then use "minute" else "minutes"
+ |
+ v
+Output "<m> minutes past <hour>"
+ |
+ v
+Else
+ |
+ v
+remaining = 60 - m
+ |
+ v
+If remaining == 1 then use "minute" else "minutes"
+ |
+ v
+Output "<remaining> minutes to <hour + 1>"
+ |
+ v
+End
+
+The function converts a given time (in hours and minutes) into its spoken English form.
+If m == 0, it outputs “X o’ clock.”
+For m == 15, m == 30, and m == 45, it returns “quarter past,” “half past,” and “quarter to” respectively.
+For values less than 30, it says “minutes past hour.”
+For values greater than 30, it calculates 60 - m and says “minutes to next hour.”
+The numbers array maps integers to their word equivalents.

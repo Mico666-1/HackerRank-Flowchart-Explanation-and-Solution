@@ -1,0 +1,29 @@
+Start
+ |
+ v
+Read n, m, k, and track list
+ |
+ v
+Group track ranges by row
+ |
+ v
+For each row in dictionary
+ |
+ v
+Sort track ranges by start column
+ |
+ v
+Merge overlapping ranges
+ |
+ v
+Add occupied cells to total
+ |
+ v
+Compute free cells = totalCells - occupied
+ |
+ v
+Output free cells
+ |
+ v
+End
+

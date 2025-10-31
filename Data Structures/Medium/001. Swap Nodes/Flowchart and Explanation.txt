@@ -1,0 +1,36 @@
+START
+|
+v
+Read number of nodes (n)
+|
+v
+Read n pairs of left and right indexes
+|
+v
+Build binary tree using queue (level order)
+|
+v
+Read number of queries
+|
+v
+For each query k:
+|
+v
+--> Swap nodes at all depths multiple of k
+|
+v
+Perform inorder traversal of tree
+|
+v
+Store traversal result
+|
+v
+Repeat for all queries
+|
+v
+Output all inorder traversals
+|
+v
+END
+
+The program constructs a binary tree from the given index list, where -1 indicates no child. For each query k, it swaps all nodes whose depth is a multiple of k. After each swap operation, it performs an inorder traversal to record the current structure of the tree. All results are collected and printed after processing all queries.

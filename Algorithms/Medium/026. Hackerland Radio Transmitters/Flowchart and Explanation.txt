@@ -1,0 +1,42 @@
+Start
+ |
+ v
+Read n, k, and list x
+ |
+ v
+Sort x in ascending order
+ |
+ v
+Set transmitters = 0, i = 0
+ |
+ v
+While i < n
+ |
+ v
+transmitters++
+ |
+ v
+loc = x[i] + k
+ |
+ v
+Move i while x[i] <= loc
+ |
+ v
+i--
+ |
+ v
+loc = x[i] + k
+ |
+ v
+Move i while x[i] <= loc
+ |
+ v
+Repeat loop
+ |
+ v
+Output transmitters
+ |
+ v
+End
+
+The algorithm sorts house locations and uses a greedy approach to place transmitters efficiently. It places a transmitter at the farthest house within range, then skips all houses covered by it, minimizing the total number of transmitters.

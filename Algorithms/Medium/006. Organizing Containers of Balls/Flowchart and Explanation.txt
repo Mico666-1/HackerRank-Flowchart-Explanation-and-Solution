@@ -1,0 +1,45 @@
+Start
+ |
+ v
+Read number of queries (q)
+ |
+ v
+For each query
+ |
+ v
+Read n (number of containers)
+ |
+ v
+Create 2D list "container"
+ |
+ v
+Initialize containerSum[n] and typeSum[n]
+ |
+ v
+For i = 0 to n-1
+ |
+ v
+For j = 0 to n-1
+ |
+ v
+containerSum[i] += container[i][j]
+ |
+ v
+typeSum[j] += container[i][j]
+ |
+ v
+Sort containerSum and typeSum
+ |
+ v
+Compare both arrays
+ |
+ v
+If all equal --> Print "Possible"
+ |
+ v
+Else --> Print "Impossible"
+ |
+ v
+End
+
+The algorithm calculates the total number of balls in each container and the total number of each ball type. By sorting these totals and comparing them, it checks if there’s a one-to-one match between container capacities and ball type quantities. If they match, it’s possible to organize all balls so that each container holds only one type; otherwise, it’s impossible.

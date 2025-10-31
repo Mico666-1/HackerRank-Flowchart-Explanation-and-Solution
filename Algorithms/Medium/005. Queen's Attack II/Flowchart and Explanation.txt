@@ -1,0 +1,39 @@
+Start
+ |
+ v
+Read n, k, queen position, and obstacles
+ |
+ v
+Store obstacles in a set
+ |
+ v
+Initialize count = 0
+ |
+ v
+Define 8 movement directions
+ |
+ v
+For each direction
+ |
+ v
+Move queen step by step in that direction
+ |
+ v
+If inside board and not blocked
+ increment count
+ |
+ v
+Stop if obstacle or edge reached
+ |
+ v
+After all directions checked
+ |
+ v
+Print count
+ |
+ v
+End
+
+The queen can move in eight possible directions — vertically, horizontally, and diagonally.
+The algorithm stores all obstacle positions in a hash set for O(1) lookup. Then, for each direction, it moves the queen one step at a time until reaching the board edge or an obstacle. Each valid square the queen can attack increases the count.
+The result is the total number of positions the queen can attack on an n × n chessboard given the obstacle positions.

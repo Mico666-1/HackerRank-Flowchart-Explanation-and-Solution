@@ -1,0 +1,36 @@
+Start
+ |
+ v
+Read grid dimensions n and m
+ |
+ v
+Store all valid pluses in list
+ |
+ v
+For each cell in grid
+ |
+ v
+If cell == 'G'
+ |
+ v
+Expand plus size while valid and add to list
+ |
+ v
+For each pair of pluses
+ |
+ v
+Check if they overlap
+ |
+ v
+If not overlapping → Compute area product
+ |
+ v
+Keep maximum product
+ |
+ v
+Output maximum product
+ |
+ v
+End
+
+The algorithm identifies all possible plus shapes made of 'G' cells, checks every pair for overlap, and calculates the product of their areas. The maximum non-overlapping area product is the final result.

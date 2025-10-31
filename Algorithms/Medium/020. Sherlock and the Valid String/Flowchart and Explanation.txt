@@ -1,0 +1,27 @@
+Start
+ |
+ v
+Read string s
+ |
+ v
+Count frequency of each character
+ |
+ v
+Count frequency of those frequencies
+ |
+ v
+If only one frequency type → YES
+ |
+ v
+If more than two types → NO
+ |
+ v
+Check if one removal can make valid
+ |
+ v
+If yes → YES else → NO
+ |
+ v
+End
+
+The algorithm checks if all characters in a string appear the same number of times or if removing one character can make the string valid. It counts how often each character appears, then how many times each frequency occurs, and uses these counts to decide whether the string satisfies the “valid” condition.

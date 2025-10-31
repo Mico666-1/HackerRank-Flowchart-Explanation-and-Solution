@@ -1,0 +1,24 @@
+Start
+ |
+ v
+Read n and arr
+ |
+ v
+Call lilysHomework(arr)
+ |
+ v
+Compute swaps for ascending order
+ |
+ v
+Compute swaps for descending order
+ |
+ v
+Return minimum of both swap counts
+ |
+ v
+Print result
+ |
+ v
+End
+
+The algorithm finds the minimum number of swaps needed to sort the array in either ascending or descending order. It compares both cases because Lily’s homework can be arranged in either direction. The method uses an index map for efficient value-position lookups during swaps, ensuring O(n log n) performance.

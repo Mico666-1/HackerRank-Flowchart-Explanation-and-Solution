@@ -1,0 +1,36 @@
+START
+|
+v
+Read number of edges (n)
+|
+v
+Build adjacency list for graph
+|
+v
+Initialize visited[] = false
+|
+v
+For each node i in graph
+|
+v
+Is node i unvisited and has edges?
+|--No--> Continue
+|--Yes--> Perform BFS from node i
+|
+v
+Count size of connected component
+|
+v
+If size > 1:
+|  Update minSize and maxSize
+|
+v
+Repeat for all nodes
+|
+v
+Output [minSize, maxSize]
+|
+v
+END
+
+The program builds an undirected graph from the given list of edges. It then performs a Breadth-First Search (BFS) to find all connected components. For each component, it counts its nodes and tracks the smallest and largest component sizes (excluding isolated nodes). Finally, it returns a list containing [minSize, maxSize].

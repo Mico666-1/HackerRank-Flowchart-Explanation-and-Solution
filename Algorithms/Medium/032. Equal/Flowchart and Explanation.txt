@@ -1,0 +1,48 @@
+Start
+|
+v
+Read array arr
+|
+v
+Find minimum value minVal
+|
+v
+Set result = large number
+|
+v
+For baseVal = 0 to 4
+|
+v
+target = minVal - baseVal
+|
+v
+currentOps = 0
+|
+v
+For each val in arr
+|
+v
+diff = val - target
+|
+v
+Use 5, 2, 1 to reduce diff and count operations
+|
+v
+Add to currentOps
+|
+v
+End inner loop
+|
+v
+result = minimum(result, currentOps)
+|
+v
+End outer loop
+|
+v
+Output result
+|
+v
+End
+
+The equal function finds the minimum number of operations to make all elements in an array equal, where each operation reduces any element by 1, 2, or 5. It tests several possible base values (the smallest element minus up to 4) to handle differences efficiently, computing how many steps each element needs to match that base. The minimal total across all trials is returned as the result.

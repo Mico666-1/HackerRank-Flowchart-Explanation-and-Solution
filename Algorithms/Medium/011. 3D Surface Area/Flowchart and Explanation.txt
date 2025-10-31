@@ -1,0 +1,37 @@
+Start
+ |
+ v
+Read dimensions H and W
+ |
+ v
+Read 2D grid A
+ |
+ v
+Initialize area = 0
+ |
+ v
+For each cell (i, j)
+ |
+ v
+If A[i][j] > 0
+ |
+ v
+Add 2 for top and bottom
+ |
+ v
+Compute exposed sides:
+front, back, left, right
+ |
+ v
+Add exposed sides to area
+ |
+ v
+Repeat for all cells
+ |
+ v
+Output total area
+ |
+ v
+End
+
+The algorithm calculates the total surface area of stacked cubes on a grid. Each stack contributes top and bottom areas (2), plus exposed sides based on the difference between its height and neighboring stacks. Boundary stacks expose full sides.

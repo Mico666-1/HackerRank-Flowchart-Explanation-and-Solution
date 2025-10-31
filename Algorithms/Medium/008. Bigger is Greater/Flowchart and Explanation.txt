@@ -1,0 +1,55 @@
+Start
+ |
+ v
+Read number of test cases T
+ |
+ v
+For each test case
+ |
+ v
+Read string w
+ |
+ v
+Convert w to character array arr
+ |
+ v
+Set i = arr.Length - 2
+ |
+ v
+Move left while arr[i] >= arr[i + 1]
+ |
+ v
+If i < 0 then
+ |
+ v
+Output "no answer"
+ |
+ v
+Else
+ |
+ v
+Set j = arr.Length - 1
+ |
+ v
+Move left while arr[j] <= arr[i]
+ |
+ v
+Swap arr[i] and arr[j]
+ |
+ v
+Reverse substring from i+1 to end
+ |
+ v
+Convert array to string
+ |
+ v
+Output result
+ |
+ v
+End
+
+This algorithm finds the next lexicographically greater word using the same letters (similar to the “next permutation” problem).
+1. Traverse from right to left to find the first character that is smaller than its next — this marks where the sequence stops increasing.
+2. Find the smallest character to the right of it that’s larger, then swap them.
+3. Reverse the substring to the right of the swapped position to make it the smallest possible order.
+4. If no such position is found, print "no answer" because the word is already the largest permutation.

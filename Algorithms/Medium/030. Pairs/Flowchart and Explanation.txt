@@ -1,0 +1,27 @@
+Start
+ |
+ v
+Read n, k, and arr
+ |
+ v
+Store all elements of arr in a HashSet
+ |
+ v
+Initialize count = 0
+ |
+ v
+For each number in arr
+ |
+ v
+If (number + k) exists in HashSet
+ |
+ v
+Increment count
+ |
+ v
+After loop, output count
+ |
+ v
+End
+
+The program counts the number of pairs in an array whose difference equals k. It uses a hash set for fast lookup, checking for each element if element + k exists, and increments the count accordingly.

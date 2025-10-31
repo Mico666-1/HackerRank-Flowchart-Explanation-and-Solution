@@ -1,0 +1,36 @@
+Start
+ |
+ v
+Read integer n
+ |
+ v
+Read n pairs into arr
+ |
+ v
+Initialize 100 empty buckets
+ |
+ v
+For i = 0 to n - 1
+ |
+ v
+Convert first element to index
+ |
+ v
+If i < n/2 → Replace value with "-"
+ |
+ v
+Add value to corresponding bucket
+ |
+ v
+After all pairs processed
+ |
+ v
+Concatenate all buckets
+ |
+ v
+Print concatenated values
+ |
+ v
+End
+
+The algorithm performs a stable counting sort. It stores strings in buckets indexed by their integer key, replacing the first half with dashes as required. After filling all buckets, it concatenates their contents and prints the sorted sequence.

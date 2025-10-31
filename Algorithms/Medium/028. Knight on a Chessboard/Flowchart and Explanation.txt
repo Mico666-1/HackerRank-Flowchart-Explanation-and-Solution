@@ -1,0 +1,30 @@
+Start
+ |
+ v
+Read n
+ |
+ v
+For each pair (a, b) from 1 to n-1
+ |
+ v
+Initialize BFS from (0, 0)
+ |
+ v
+Explore knight moves within board
+ |
+ v
+If reach (n-1, n-1) → record steps
+ |
+ v
+If not reachable → record -1
+ |
+ v
+Repeat for all (a, b)
+ |
+ v
+Output 2D list of results
+ |
+ v
+End
+
+The program uses a breadth-first search (BFS) to find the minimum number of moves a knight can take to reach the opposite corner of an n×n chessboard for each possible move pattern (a, b). It repeats this for all combinations and returns a grid of results.
